@@ -1,0 +1,74 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Niruyan/Desktop/eecs3201lab4/part3
+vdisp
+Z0 !s110 1509498813
+!i10b 1
+!s100 Ff91012[WoRO]4iEe5RAf3
+IiUT?Lo5Nc>gPSG>VooflK0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Niruyan/Desktop/eecs3201lab4/part1
+Z3 w1509498805
+Z4 8C:\Users\Niruyan\Desktop\eecs3201lab4\part1\part1.v
+Z5 FC:\Users\Niruyan\Desktop\eecs3201lab4\part1\part1.v
+L0 13
+Z6 OV;L;10.5c;63
+r1
+!s85 0
+31
+Z7 !s108 1509498813.000000
+Z8 !s107 C:\Users\Niruyan\Desktop\eecs3201lab4\part1\part1.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Niruyan\Desktop\eecs3201lab4\part1\part1.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vpart1
+R0
+!i10b 1
+!s100 czac9dUT1]:N>DVlFB4d53
+IgkXY13>?a8a1_:MU_>6@?1
+R1
+R2
+R3
+R4
+R5
+L0 26
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vT_FF
+R0
+!i10b 1
+!s100 MOfzUk2o9Lm1ihB3ShZDY0
+Io6GRDSbWehD0La7YbbnaK3
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@t_@f@f

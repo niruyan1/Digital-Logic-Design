@@ -1,0 +1,90 @@
+|part2
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+LEDG[0] <= fulladder:adder1.port3
+LEDG[1] <= fulladder:adder2.port3
+LEDG[2] <= fulladder:adder3.port3
+LEDG[3] <= fulladder:adder4.port3
+LEDG[4] <= fulladder:adder4.port4
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= SW[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= SW[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= SW[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= SW[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= SW[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= SW[8].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|fulladder:adder1
+a => x1.IN0
+b => b.IN1
+ci => ci.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= mux2to1:mux1.port3
+
+
+|part2|fulladder:adder1|mux2to1:mux1
+a => s.IN0
+b => s.IN0
+c => s.IN1
+c => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|fulladder:adder2
+a => x1.IN0
+b => b.IN1
+ci => ci.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= mux2to1:mux1.port3
+
+
+|part2|fulladder:adder2|mux2to1:mux1
+a => s.IN0
+b => s.IN0
+c => s.IN1
+c => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|fulladder:adder3
+a => x1.IN0
+b => b.IN1
+ci => ci.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= mux2to1:mux1.port3
+
+
+|part2|fulladder:adder3|mux2to1:mux1
+a => s.IN0
+b => s.IN0
+c => s.IN1
+c => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|fulladder:adder4
+a => x1.IN0
+b => b.IN1
+ci => ci.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= mux2to1:mux1.port3
+
+
+|part2|fulladder:adder4|mux2to1:mux1
+a => s.IN0
+b => s.IN0
+c => s.IN1
+c => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+

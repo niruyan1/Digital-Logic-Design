@@ -1,0 +1,70 @@
+module mux2to1(a,b,c,s);
+	input [6:0]a,b;
+	input c;
+	output [6:0]s;
+	assign s=(c)?b:a;
+endmodule 
+
+module D_FF(clk,D,Q);
+	input clk;
+	input [6:0]D;
+	output reg [6:0]Q;
+	always@(posedge clk)
+		Q<=D;
+endmodule
+
+module circuit1(right,left,lleft,d,loadn,clk,q);
+	input [6:0] right,left,d;
+	input lleft,loadn,clk;
+	output [6:0]q;
+	wire [6:0]w1,w2;
+	mux2to1 mux1(right,left,lleft,w1);
+	mux2to1 mux2(d,w1,loadn,w2);
+	D_FF dff1(clk,w2,q);
+endmodule
+
+module pshift(clk,ploadn,rright,datain,qout);
+	input clk,ploadn,rright;
+	input[27:0]datain;
+	output[27:0] qout;
+	circuit1 c1(qout[20:14],qout[6:0],rright,datain[27:21],ploadn,clk,qout[27:21]);
+	circuit1 c2(qout[13:7],qout[27:21],rright,datain[20:14],ploadn,clk,qout[20:14]);
+	circuit1 c3(qout[6:0],qout[20:14],rright,datain[13:7],ploadn,clk,qout[13:7]);
+	circuit1 c4(qout[27:21],qout[13:7],rright,datain[6:0],ploadn,clk,qout[6:0]);
+endmodule	
+
+module clk50(clk,clk1sec);
+	input clk;
+	output reg clk1sec;
+	reg [31:0]counter=0;
+	always @(posedge clk)
+	begin
+		counter<=counter+1;
+		if(counter==32'd25000000)
+		begin
+		clk1sec<=1;
+		counter<=0;
+		end
+		else
+		begin
+		clk1sec<=0;
+		end
+	end
+endmodule
+
+
+module part4 (clk,HEX3,HEX2,HEX1,HEX0);
+	input clk;
+	output [6:0] HEX3,HEX2,HEX1,HEX0;
+	wire clk50;
+	integer count=0;
+	reg ploadn=0;
+	clk50 c1(clk,clk50);
+	pshift ps(clk50,ploadn,1'b1,28'b1110011111011111011011101101,{HEX3,HEX2,HEX1,HEX0});
+	always@(posedge clk50)
+	begin
+	count<=count+1;
+	if(count>=2)
+	ploadn<=1;
+	end
+endmodule 

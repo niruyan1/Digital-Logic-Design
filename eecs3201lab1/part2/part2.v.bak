@@ -1,0 +1,7 @@
+module part2 (U,V,W,X,Y,Z,s0,s1,s2,M);
+	input [2:0] U,V,W,X,Y,Z;
+	input s0,s1,s2;
+	output [2:0] M;
+	
+	assign LEDR=SW;
+endmodule

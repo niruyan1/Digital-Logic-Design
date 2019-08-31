@@ -1,0 +1,55 @@
+module mux2to1(a,b,c,s);
+	input a,b,c;
+	output s;
+	assign s=(~c&a)|(c&b);
+endmodule 
+
+module D_FF(clk,D,Q);
+	input clk,D;
+	output reg Q;
+	always@(posedge clk)
+		Q<=D;
+endmodule
+
+module circuit1(right,left,lleft,d,loadn,clk,q);
+	input right,left,lleft,d,loadn,clk;
+	output q;
+	wire w1,w2;
+	mux2to1 mux1(right,left,lleft,w1);
+	mux2to1 mux2(d,w1,loadn,w2);
+	D_FF dff1(clk,w2,q);
+endmodule
+
+module part3(clk,qout);
+	input clk;
+	wire[17:0]datain;
+	wire ploadn;
+	reg rright;
+	output[17:0] qout;
+	assign datain=18'b1;
+	assign ploadn=1'b1;
+	circuit1 c1(qout[16],qout[16],rright,datain[17],ploadn,clk,qout[17]);
+	circuit1 c2(qout[15],qout[17],rright,datain[16],ploadn,clk,qout[16]);
+	circuit1 c3(qout[14],qout[16],rright,datain[15],ploadn,clk,qout[15]);
+	circuit1 c4(qout[13],qout[15],rright,datain[14],ploadn,clk,qout[14]);
+	circuit1 c5(qout[12],qout[14],rright,datain[13],ploadn,clk,qout[13]);
+	circuit1 c6(qout[11],qout[13],rright,datain[12],ploadn,clk,qout[12]);
+	circuit1 c7(qout[10],qout[12],rright,datain[11],ploadn,clk,qout[11]);
+	circuit1 c8(qout[9],qout[11],rright,datain[10],ploadn,clk,qout[10]);
+	circuit1 c9(qout[8],qout[10],rright,datain[9],ploadn,clk,qout[9]);
+	circuit1 c10(qout[7],qout[9],rright,datain[8],ploadn,clk,qout[8]);
+	circuit1 c11(qout[6],qout[8],rright,datain[7],ploadn,clk,qout[7]);
+	circuit1 c12(qout[5],qout[7],rright,datain[6],ploadn,clk,qout[6]);
+	circuit1 c13(qout[4],qout[6],rright,datain[5],ploadn,clk,qout[5]);
+	circuit1 c14(qout[3],qout[5],rright,datain[4],ploadn,clk,qout[4]);
+	circuit1 c15(qout[2],qout[4],rright,datain[3],ploadn,clk,qout[3]);
+	circuit1 c16(qout[1],qout[3],rright,datain[2],ploadn,clk,qout[2]);
+	circuit1 c17(qout[0],qout[2],rright,datain[1],ploadn,clk,qout[1]);
+	circuit1 c18(qout[1],qout[1],rright,datain[0],ploadn,clk,qout[0]);
+	always@(posedge clk)
+	begin
+	rright=1;
+		if(qout[0]|qout[17])
+			rright=!rright;
+	end
+endmodule

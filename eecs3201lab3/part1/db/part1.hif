@@ -1,0 +1,196 @@
+Quartus II 64-Bit
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+part1
+# storage
+db|part1.(0).cnf
+db|part1.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+part1.v
+a4c6e78367a24649624cf1b7ec33a361
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+circuit1
+# storage
+db|part1.(1).cnf
+db|part1.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+part1.v
+a4c6e78367a24649624cf1b7ec33a361
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+circuit1:c1
+circuit1:c2
+circuit1:c3
+circuit1:c4
+circuit1:c5
+circuit1:c6
+circuit1:c7
+circuit1:c8
+}
+# macro_sequence
+
+# end
+# entity
+mux2to1
+# storage
+db|part1.(2).cnf
+db|part1.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+part1.v
+a4c6e78367a24649624cf1b7ec33a361
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+circuit1:c1|mux2to1:mux1
+circuit1:c1|mux2to1:mux2
+circuit1:c2|mux2to1:mux1
+circuit1:c2|mux2to1:mux2
+circuit1:c3|mux2to1:mux1
+circuit1:c3|mux2to1:mux2
+circuit1:c4|mux2to1:mux1
+circuit1:c4|mux2to1:mux2
+circuit1:c5|mux2to1:mux1
+circuit1:c5|mux2to1:mux2
+circuit1:c6|mux2to1:mux1
+circuit1:c6|mux2to1:mux2
+circuit1:c7|mux2to1:mux1
+circuit1:c7|mux2to1:mux2
+circuit1:c8|mux2to1:mux1
+circuit1:c8|mux2to1:mux2
+}
+# macro_sequence
+
+# end
+# entity
+D_FF
+# storage
+db|part1.(3).cnf
+db|part1.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+part1.v
+a4c6e78367a24649624cf1b7ec33a361
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+circuit1:c1|D_FF:dff1
+circuit1:c2|D_FF:dff1
+circuit1:c3|D_FF:dff1
+circuit1:c4|D_FF:dff1
+circuit1:c5|D_FF:dff1
+circuit1:c6|D_FF:dff1
+circuit1:c7|D_FF:dff1
+circuit1:c8|D_FF:dff1
+}
+# macro_sequence
+
+# end
+# complete
+

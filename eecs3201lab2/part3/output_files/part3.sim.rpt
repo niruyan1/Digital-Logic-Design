@@ -1,0 +1,570 @@
+Simulator report for part3
+Mon Oct 02 18:43:58 2017
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 309 nodes    ;
+; Simulation Coverage         ;      67.64 % ;
+; Total Number of Transitions ; 2294         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; part3.vwf  ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      67.64 % ;
+; Total nodes checked                                 ; 309          ;
+; Total output ports checked                          ; 309          ;
+; Total output ports with complete 1/0-value coverage ; 209          ;
+; Total output ports with no 1/0-value coverage       ; 100          ;
+; Total output ports with no 1-value coverage         ; 100          ;
+; Total output ports with no 0-value coverage         ; 100          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------+
+; Complete 1/0-Value Coverage                           ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |part3|Z~6      ; |part3|Z~6       ; out0             ;
+; |part3|Z~7      ; |part3|Z~7       ; out0             ;
+; |part3|Z~8      ; |part3|Z~8       ; out0             ;
+; |part3|Z~9      ; |part3|Z~9       ; out0             ;
+; |part3|Z~10     ; |part3|Z~10      ; out0             ;
+; |part3|Z~11     ; |part3|Z~11      ; out0             ;
+; |part3|Z~12     ; |part3|Z~12      ; out0             ;
+; |part3|Z~13     ; |part3|Z~13      ; out0             ;
+; |part3|Z~14     ; |part3|Z~14      ; out0             ;
+; |part3|Z~15     ; |part3|Z~15      ; out0             ;
+; |part3|Z~16     ; |part3|Z~16      ; out0             ;
+; |part3|Z~17     ; |part3|Z~17      ; out0             ;
+; |part3|Z~18     ; |part3|Z~18      ; out0             ;
+; |part3|Z~19     ; |part3|Z~19      ; out0             ;
+; |part3|Z~20     ; |part3|Z~20      ; out0             ;
+; |part3|Z~21     ; |part3|Z~21      ; out0             ;
+; |part3|Z~22     ; |part3|Z~22      ; out0             ;
+; |part3|Z~23     ; |part3|Z~23      ; out0             ;
+; |part3|Z~24     ; |part3|Z~24      ; out0             ;
+; |part3|Z~25     ; |part3|Z~25      ; out0             ;
+; |part3|Z~26     ; |part3|Z~26      ; out0             ;
+; |part3|Z~27     ; |part3|Z~27      ; out0             ;
+; |part3|Z~28     ; |part3|Z~28      ; out0             ;
+; |part3|Z~29     ; |part3|Z~29      ; out0             ;
+; |part3|Z~30     ; |part3|Z~30      ; out0             ;
+; |part3|Z~31     ; |part3|Z~31      ; out0             ;
+; |part3|Z~36     ; |part3|Z~36      ; out              ;
+; |part3|Z~37     ; |part3|Z~37      ; out              ;
+; |part3|Z~38     ; |part3|Z~38      ; out              ;
+; |part3|Z~44     ; |part3|Z~44      ; out              ;
+; |part3|Z~45     ; |part3|Z~45      ; out              ;
+; |part3|Z~46     ; |part3|Z~46      ; out              ;
+; |part3|Z~47     ; |part3|Z~47      ; out              ;
+; |part3|Z~48     ; |part3|Z~48      ; out              ;
+; |part3|Z~52     ; |part3|Z~52      ; out              ;
+; |part3|Z~53     ; |part3|Z~53      ; out              ;
+; |part3|Z~54     ; |part3|Z~54      ; out              ;
+; |part3|Z~55     ; |part3|Z~55      ; out              ;
+; |part3|Z~56     ; |part3|Z~56      ; out              ;
+; |part3|Z~60     ; |part3|Z~60      ; out              ;
+; |part3|Z~61     ; |part3|Z~61      ; out              ;
+; |part3|Z~62     ; |part3|Z~62      ; out              ;
+; |part3|Z~63     ; |part3|Z~63      ; out              ;
+; |part3|Z~64     ; |part3|Z~64      ; out              ;
+; |part3|Z~65     ; |part3|Z~65      ; out              ;
+; |part3|Z~66     ; |part3|Z~66      ; out              ;
+; |part3|Z~67     ; |part3|Z~67      ; out              ;
+; |part3|Z~68     ; |part3|Z~68      ; out              ;
+; |part3|Z~69     ; |part3|Z~69      ; out              ;
+; |part3|Z~70     ; |part3|Z~70      ; out              ;
+; |part3|Z~71     ; |part3|Z~71      ; out              ;
+; |part3|Z~72     ; |part3|Z~72      ; out              ;
+; |part3|Z~73     ; |part3|Z~73      ; out              ;
+; |part3|Z~74     ; |part3|Z~74      ; out              ;
+; |part3|Z~75     ; |part3|Z~75      ; out              ;
+; |part3|Z~76     ; |part3|Z~76      ; out              ;
+; |part3|Z~77     ; |part3|Z~77      ; out              ;
+; |part3|Z~78     ; |part3|Z~78      ; out              ;
+; |part3|Z~79     ; |part3|Z~79      ; out              ;
+; |part3|Z~80     ; |part3|Z~80      ; out              ;
+; |part3|Z~81     ; |part3|Z~81      ; out              ;
+; |part3|Z~82     ; |part3|Z~82      ; out              ;
+; |part3|Z~83     ; |part3|Z~83      ; out              ;
+; |part3|Z~84     ; |part3|Z~84      ; out              ;
+; |part3|Z~85     ; |part3|Z~85      ; out              ;
+; |part3|Z~86     ; |part3|Z~86      ; out              ;
+; |part3|Z~87     ; |part3|Z~87      ; out              ;
+; |part3|Z~88     ; |part3|Z~88      ; out              ;
+; |part3|Z~89     ; |part3|Z~89      ; out              ;
+; |part3|Z~90     ; |part3|Z~90      ; out              ;
+; |part3|Z~91     ; |part3|Z~91      ; out              ;
+; |part3|Z~92     ; |part3|Z~92      ; out              ;
+; |part3|Z~93     ; |part3|Z~93      ; out              ;
+; |part3|Z~94     ; |part3|Z~94      ; out              ;
+; |part3|Z~95     ; |part3|Z~95      ; out              ;
+; |part3|A[0]     ; |part3|A[0]      ; out              ;
+; |part3|A[1]     ; |part3|A[1]      ; out              ;
+; |part3|A[2]     ; |part3|A[2]      ; out              ;
+; |part3|A[3]     ; |part3|A[3]      ; out              ;
+; |part3|A[4]     ; |part3|A[4]      ; out              ;
+; |part3|A[5]     ; |part3|A[5]      ; out              ;
+; |part3|A[6]     ; |part3|A[6]      ; out              ;
+; |part3|A[7]     ; |part3|A[7]      ; out              ;
+; |part3|B[0]     ; |part3|B[0]      ; out              ;
+; |part3|B[1]     ; |part3|B[1]      ; out              ;
+; |part3|B[2]     ; |part3|B[2]      ; out              ;
+; |part3|B[3]     ; |part3|B[3]      ; out              ;
+; |part3|B[4]     ; |part3|B[4]      ; out              ;
+; |part3|B[5]     ; |part3|B[5]      ; out              ;
+; |part3|B[6]     ; |part3|B[6]      ; out              ;
+; |part3|B[7]     ; |part3|B[7]      ; out              ;
+; |part3|Q[0]     ; |part3|Q[0]      ; out              ;
+; |part3|Q[1]     ; |part3|Q[1]      ; out              ;
+; |part3|Q[2]     ; |part3|Q[2]      ; out              ;
+; |part3|Z[0]     ; |part3|Z[0]      ; pin_out          ;
+; |part3|Z[1]     ; |part3|Z[1]      ; pin_out          ;
+; |part3|Z[2]     ; |part3|Z[2]      ; pin_out          ;
+; |part3|Z[3]     ; |part3|Z[3]      ; pin_out          ;
+; |part3|Z[4]     ; |part3|Z[4]      ; pin_out          ;
+; |part3|Z[5]     ; |part3|Z[5]      ; pin_out          ;
+; |part3|Z[6]     ; |part3|Z[6]      ; pin_out          ;
+; |part3|Z[7]     ; |part3|Z[7]      ; pin_out          ;
+; |part3|Add0~0   ; |part3|Add0~0    ; out0             ;
+; |part3|Add0~1   ; |part3|Add0~1    ; out0             ;
+; |part3|Add1~0   ; |part3|Add1~0    ; out0             ;
+; |part3|Add1~1   ; |part3|Add1~1    ; out0             ;
+; |part3|Add1~2   ; |part3|Add1~2    ; out0             ;
+; |part3|Add2~0   ; |part3|Add2~0    ; out0             ;
+; |part3|Add2~1   ; |part3|Add2~1    ; out0             ;
+; |part3|Add2~2   ; |part3|Add2~2    ; out0             ;
+; |part3|Add2~3   ; |part3|Add2~3    ; out0             ;
+; |part3|Add2~4   ; |part3|Add2~4    ; out0             ;
+; |part3|Add3~0   ; |part3|Add3~0    ; out0             ;
+; |part3|Add3~1   ; |part3|Add3~1    ; out0             ;
+; |part3|Add3~2   ; |part3|Add3~2    ; out0             ;
+; |part3|Add3~3   ; |part3|Add3~3    ; out0             ;
+; |part3|Add3~4   ; |part3|Add3~4    ; out0             ;
+; |part3|Add4~0   ; |part3|Add4~0    ; out0             ;
+; |part3|Add4~1   ; |part3|Add4~1    ; out0             ;
+; |part3|Add4~2   ; |part3|Add4~2    ; out0             ;
+; |part3|Add4~3   ; |part3|Add4~3    ; out0             ;
+; |part3|Add4~4   ; |part3|Add4~4    ; out0             ;
+; |part3|Add5~0   ; |part3|Add5~0    ; out0             ;
+; |part3|Add5~1   ; |part3|Add5~1    ; out0             ;
+; |part3|Add5~2   ; |part3|Add5~2    ; out0             ;
+; |part3|Add5~3   ; |part3|Add5~3    ; out0             ;
+; |part3|Add5~4   ; |part3|Add5~4    ; out0             ;
+; |part3|Add6~0   ; |part3|Add6~0    ; out0             ;
+; |part3|Add6~1   ; |part3|Add6~1    ; out0             ;
+; |part3|Add6~2   ; |part3|Add6~2    ; out0             ;
+; |part3|Add6~3   ; |part3|Add6~3    ; out0             ;
+; |part3|Add6~4   ; |part3|Add6~4    ; out0             ;
+; |part3|Add6~5   ; |part3|Add6~5    ; out0             ;
+; |part3|Add6~6   ; |part3|Add6~6    ; out0             ;
+; |part3|Add7~1   ; |part3|Add7~1    ; out0             ;
+; |part3|Add8~0   ; |part3|Add8~0    ; out0             ;
+; |part3|Add8~2   ; |part3|Add8~2    ; out0             ;
+; |part3|Add9~1   ; |part3|Add9~1    ; out0             ;
+; |part3|Add9~3   ; |part3|Add9~3    ; out0             ;
+; |part3|Add9~4   ; |part3|Add9~4    ; out0             ;
+; |part3|Add10~0  ; |part3|Add10~0   ; out0             ;
+; |part3|Add10~4  ; |part3|Add10~4   ; out0             ;
+; |part3|Add11~1  ; |part3|Add11~1   ; out0             ;
+; |part3|Add11~2  ; |part3|Add11~2   ; out0             ;
+; |part3|Add11~4  ; |part3|Add11~4   ; out0             ;
+; |part3|Add12~0  ; |part3|Add12~0   ; out0             ;
+; |part3|Add12~2  ; |part3|Add12~2   ; out0             ;
+; |part3|Add12~4  ; |part3|Add12~4   ; out0             ;
+; |part3|Add13~0  ; |part3|Add13~0   ; out0             ;
+; |part3|Add13~1  ; |part3|Add13~1   ; out0             ;
+; |part3|Add13~2  ; |part3|Add13~2   ; out0             ;
+; |part3|Add13~3  ; |part3|Add13~3   ; out0             ;
+; |part3|Add13~4  ; |part3|Add13~4   ; out0             ;
+; |part3|Add13~5  ; |part3|Add13~5   ; out0             ;
+; |part3|Add13~6  ; |part3|Add13~6   ; out0             ;
+; |part3|Add14~0  ; |part3|Add14~0   ; out0             ;
+; |part3|Add14~1  ; |part3|Add14~1   ; out0             ;
+; |part3|Add14~2  ; |part3|Add14~2   ; out0             ;
+; |part3|Add14~3  ; |part3|Add14~3   ; out0             ;
+; |part3|Add14~4  ; |part3|Add14~4   ; out0             ;
+; |part3|Add14~5  ; |part3|Add14~5   ; out0             ;
+; |part3|Add14~6  ; |part3|Add14~6   ; out0             ;
+; |part3|Add14~7  ; |part3|Add14~7   ; out0             ;
+; |part3|Add14~8  ; |part3|Add14~8   ; out0             ;
+; |part3|Add14~9  ; |part3|Add14~9   ; out0             ;
+; |part3|Add14~10 ; |part3|Add14~10  ; out0             ;
+; |part3|Add14~11 ; |part3|Add14~11  ; out0             ;
+; |part3|Add14~12 ; |part3|Add14~12  ; out0             ;
+; |part3|Add14~13 ; |part3|Add14~13  ; out0             ;
+; |part3|Add14~14 ; |part3|Add14~14  ; out0             ;
+; |part3|Add14~15 ; |part3|Add14~15  ; out0             ;
+; |part3|Add14~16 ; |part3|Add14~16  ; out0             ;
+; |part3|Add14~17 ; |part3|Add14~17  ; out0             ;
+; |part3|Add14~18 ; |part3|Add14~18  ; out0             ;
+; |part3|Add14~19 ; |part3|Add14~19  ; out0             ;
+; |part3|Add14~20 ; |part3|Add14~20  ; out0             ;
+; |part3|Add14~21 ; |part3|Add14~21  ; out0             ;
+; |part3|Add14~22 ; |part3|Add14~22  ; out0             ;
+; |part3|Add14~23 ; |part3|Add14~23  ; out0             ;
+; |part3|Add14~24 ; |part3|Add14~24  ; out0             ;
+; |part3|Add14~25 ; |part3|Add14~25  ; out0             ;
+; |part3|Add14~26 ; |part3|Add14~26  ; out0             ;
+; |part3|Add14~27 ; |part3|Add14~27  ; out0             ;
+; |part3|Add14~28 ; |part3|Add14~28  ; out0             ;
+; |part3|Add14~29 ; |part3|Add14~29  ; out0             ;
+; |part3|Add14~30 ; |part3|Add14~30  ; out0             ;
+; |part3|Add14~31 ; |part3|Add14~31  ; out0             ;
+; |part3|Add14~32 ; |part3|Add14~32  ; out0             ;
+; |part3|Add15~0  ; |part3|Add15~0   ; out0             ;
+; |part3|Add15~2  ; |part3|Add15~2   ; out0             ;
+; |part3|Add15~3  ; |part3|Add15~3   ; out0             ;
+; |part3|Add15~5  ; |part3|Add15~5   ; out0             ;
+; |part3|Add15~7  ; |part3|Add15~7   ; out0             ;
+; |part3|Add15~8  ; |part3|Add15~8   ; out0             ;
+; |part3|Add15~9  ; |part3|Add15~9   ; out0             ;
+; |part3|Add15~10 ; |part3|Add15~10  ; out0             ;
+; |part3|Add15~11 ; |part3|Add15~11  ; out0             ;
+; |part3|Add15~12 ; |part3|Add15~12  ; out0             ;
+; |part3|Add15~13 ; |part3|Add15~13  ; out0             ;
+; |part3|Add15~15 ; |part3|Add15~15  ; out0             ;
+; |part3|Add15~17 ; |part3|Add15~17  ; out0             ;
+; |part3|Equal0~0 ; |part3|Equal0~0  ; out0             ;
+; |part3|Equal1~0 ; |part3|Equal1~0  ; out0             ;
+; |part3|Equal2~0 ; |part3|Equal2~0  ; out0             ;
+; |part3|Equal3~0 ; |part3|Equal3~0  ; out0             ;
+; |part3|Equal4~0 ; |part3|Equal4~0  ; out0             ;
+; |part3|Equal5~0 ; |part3|Equal5~0  ; out0             ;
+; |part3|Equal6~0 ; |part3|Equal6~0  ; out0             ;
+; |part3|Equal7~0 ; |part3|Equal7~0  ; out0             ;
++-----------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------+
+; Missing 1-Value Coverage                              ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |part3|Z~0      ; |part3|Z~0       ; out0             ;
+; |part3|Z~1      ; |part3|Z~1       ; out0             ;
+; |part3|Z~2      ; |part3|Z~2       ; out0             ;
+; |part3|Z~3      ; |part3|Z~3       ; out0             ;
+; |part3|Z~4      ; |part3|Z~4       ; out0             ;
+; |part3|Z~5      ; |part3|Z~5       ; out0             ;
+; |part3|Z~32     ; |part3|Z~32      ; out              ;
+; |part3|Z~33     ; |part3|Z~33      ; out              ;
+; |part3|Z~34     ; |part3|Z~34      ; out              ;
+; |part3|Z~35     ; |part3|Z~35      ; out              ;
+; |part3|Z~39     ; |part3|Z~39      ; out              ;
+; |part3|Z~40     ; |part3|Z~40      ; out              ;
+; |part3|Z~41     ; |part3|Z~41      ; out              ;
+; |part3|Z~42     ; |part3|Z~42      ; out              ;
+; |part3|Z~43     ; |part3|Z~43      ; out              ;
+; |part3|Z~49     ; |part3|Z~49      ; out              ;
+; |part3|Z~50     ; |part3|Z~50      ; out              ;
+; |part3|Z~51     ; |part3|Z~51      ; out              ;
+; |part3|Z~57     ; |part3|Z~57      ; out              ;
+; |part3|Z~58     ; |part3|Z~58      ; out              ;
+; |part3|Z~59     ; |part3|Z~59      ; out              ;
+; |part3|Add1~3   ; |part3|Add1~3    ; out0             ;
+; |part3|Add2~5   ; |part3|Add2~5    ; out0             ;
+; |part3|Add3~5   ; |part3|Add3~5    ; out0             ;
+; |part3|Add3~6   ; |part3|Add3~6    ; out0             ;
+; |part3|Add3~7   ; |part3|Add3~7    ; out0             ;
+; |part3|Add4~5   ; |part3|Add4~5    ; out0             ;
+; |part3|Add4~6   ; |part3|Add4~6    ; out0             ;
+; |part3|Add4~7   ; |part3|Add4~7    ; out0             ;
+; |part3|Add4~8   ; |part3|Add4~8    ; out0             ;
+; |part3|Add4~9   ; |part3|Add4~9    ; out0             ;
+; |part3|Add5~5   ; |part3|Add5~5    ; out0             ;
+; |part3|Add5~6   ; |part3|Add5~6    ; out0             ;
+; |part3|Add5~7   ; |part3|Add5~7    ; out0             ;
+; |part3|Add5~8   ; |part3|Add5~8    ; out0             ;
+; |part3|Add5~9   ; |part3|Add5~9    ; out0             ;
+; |part3|Add5~10  ; |part3|Add5~10   ; out0             ;
+; |part3|Add5~11  ; |part3|Add5~11   ; out0             ;
+; |part3|Add6~7   ; |part3|Add6~7    ; out0             ;
+; |part3|Add6~8   ; |part3|Add6~8    ; out0             ;
+; |part3|Add6~9   ; |part3|Add6~9    ; out0             ;
+; |part3|Add6~10  ; |part3|Add6~10   ; out0             ;
+; |part3|Add6~11  ; |part3|Add6~11   ; out0             ;
+; |part3|Add6~12  ; |part3|Add6~12   ; out0             ;
+; |part3|Add6~13  ; |part3|Add6~13   ; out0             ;
+; |part3|Add7~0   ; |part3|Add7~0    ; out0             ;
+; |part3|Add8~1   ; |part3|Add8~1    ; out0             ;
+; |part3|Add8~3   ; |part3|Add8~3    ; out0             ;
+; |part3|Add9~0   ; |part3|Add9~0    ; out0             ;
+; |part3|Add9~2   ; |part3|Add9~2    ; out0             ;
+; |part3|Add9~5   ; |part3|Add9~5    ; out0             ;
+; |part3|Add10~1  ; |part3|Add10~1   ; out0             ;
+; |part3|Add10~2  ; |part3|Add10~2   ; out0             ;
+; |part3|Add10~3  ; |part3|Add10~3   ; out0             ;
+; |part3|Add10~5  ; |part3|Add10~5   ; out0             ;
+; |part3|Add10~6  ; |part3|Add10~6   ; out0             ;
+; |part3|Add10~7  ; |part3|Add10~7   ; out0             ;
+; |part3|Add11~0  ; |part3|Add11~0   ; out0             ;
+; |part3|Add11~3  ; |part3|Add11~3   ; out0             ;
+; |part3|Add11~5  ; |part3|Add11~5   ; out0             ;
+; |part3|Add11~6  ; |part3|Add11~6   ; out0             ;
+; |part3|Add11~7  ; |part3|Add11~7   ; out0             ;
+; |part3|Add11~8  ; |part3|Add11~8   ; out0             ;
+; |part3|Add11~9  ; |part3|Add11~9   ; out0             ;
+; |part3|Add12~1  ; |part3|Add12~1   ; out0             ;
+; |part3|Add12~3  ; |part3|Add12~3   ; out0             ;
+; |part3|Add12~5  ; |part3|Add12~5   ; out0             ;
+; |part3|Add12~6  ; |part3|Add12~6   ; out0             ;
+; |part3|Add12~7  ; |part3|Add12~7   ; out0             ;
+; |part3|Add12~8  ; |part3|Add12~8   ; out0             ;
+; |part3|Add12~9  ; |part3|Add12~9   ; out0             ;
+; |part3|Add12~10 ; |part3|Add12~10  ; out0             ;
+; |part3|Add12~11 ; |part3|Add12~11  ; out0             ;
+; |part3|Add13~7  ; |part3|Add13~7   ; out0             ;
+; |part3|Add13~8  ; |part3|Add13~8   ; out0             ;
+; |part3|Add13~9  ; |part3|Add13~9   ; out0             ;
+; |part3|Add13~10 ; |part3|Add13~10  ; out0             ;
+; |part3|Add13~11 ; |part3|Add13~11  ; out0             ;
+; |part3|Add13~12 ; |part3|Add13~12  ; out0             ;
+; |part3|Add13~13 ; |part3|Add13~13  ; out0             ;
+; |part3|Add15~1  ; |part3|Add15~1   ; out0             ;
+; |part3|Add15~4  ; |part3|Add15~4   ; out0             ;
+; |part3|Add15~6  ; |part3|Add15~6   ; out0             ;
+; |part3|Add15~14 ; |part3|Add15~14  ; out0             ;
+; |part3|Add15~16 ; |part3|Add15~16  ; out0             ;
+; |part3|Add15~18 ; |part3|Add15~18  ; out0             ;
+; |part3|Add15~19 ; |part3|Add15~19  ; out0             ;
+; |part3|Add15~20 ; |part3|Add15~20  ; out0             ;
+; |part3|Add15~21 ; |part3|Add15~21  ; out0             ;
+; |part3|Add15~22 ; |part3|Add15~22  ; out0             ;
+; |part3|Add15~23 ; |part3|Add15~23  ; out0             ;
+; |part3|Add15~24 ; |part3|Add15~24  ; out0             ;
+; |part3|Add15~25 ; |part3|Add15~25  ; out0             ;
+; |part3|Add15~26 ; |part3|Add15~26  ; out0             ;
+; |part3|Add15~27 ; |part3|Add15~27  ; out0             ;
+; |part3|Add15~28 ; |part3|Add15~28  ; out0             ;
+; |part3|Add15~29 ; |part3|Add15~29  ; out0             ;
+; |part3|Add15~30 ; |part3|Add15~30  ; out0             ;
+; |part3|Add15~31 ; |part3|Add15~31  ; out0             ;
+; |part3|Add15~32 ; |part3|Add15~32  ; out0             ;
++-----------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------+
+; Missing 0-Value Coverage                              ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |part3|Z~0      ; |part3|Z~0       ; out0             ;
+; |part3|Z~1      ; |part3|Z~1       ; out0             ;
+; |part3|Z~2      ; |part3|Z~2       ; out0             ;
+; |part3|Z~3      ; |part3|Z~3       ; out0             ;
+; |part3|Z~4      ; |part3|Z~4       ; out0             ;
+; |part3|Z~5      ; |part3|Z~5       ; out0             ;
+; |part3|Z~32     ; |part3|Z~32      ; out              ;
+; |part3|Z~33     ; |part3|Z~33      ; out              ;
+; |part3|Z~34     ; |part3|Z~34      ; out              ;
+; |part3|Z~35     ; |part3|Z~35      ; out              ;
+; |part3|Z~39     ; |part3|Z~39      ; out              ;
+; |part3|Z~40     ; |part3|Z~40      ; out              ;
+; |part3|Z~41     ; |part3|Z~41      ; out              ;
+; |part3|Z~42     ; |part3|Z~42      ; out              ;
+; |part3|Z~43     ; |part3|Z~43      ; out              ;
+; |part3|Z~49     ; |part3|Z~49      ; out              ;
+; |part3|Z~50     ; |part3|Z~50      ; out              ;
+; |part3|Z~51     ; |part3|Z~51      ; out              ;
+; |part3|Z~57     ; |part3|Z~57      ; out              ;
+; |part3|Z~58     ; |part3|Z~58      ; out              ;
+; |part3|Z~59     ; |part3|Z~59      ; out              ;
+; |part3|Add1~3   ; |part3|Add1~3    ; out0             ;
+; |part3|Add2~5   ; |part3|Add2~5    ; out0             ;
+; |part3|Add3~5   ; |part3|Add3~5    ; out0             ;
+; |part3|Add3~6   ; |part3|Add3~6    ; out0             ;
+; |part3|Add3~7   ; |part3|Add3~7    ; out0             ;
+; |part3|Add4~5   ; |part3|Add4~5    ; out0             ;
+; |part3|Add4~6   ; |part3|Add4~6    ; out0             ;
+; |part3|Add4~7   ; |part3|Add4~7    ; out0             ;
+; |part3|Add4~8   ; |part3|Add4~8    ; out0             ;
+; |part3|Add4~9   ; |part3|Add4~9    ; out0             ;
+; |part3|Add5~5   ; |part3|Add5~5    ; out0             ;
+; |part3|Add5~6   ; |part3|Add5~6    ; out0             ;
+; |part3|Add5~7   ; |part3|Add5~7    ; out0             ;
+; |part3|Add5~8   ; |part3|Add5~8    ; out0             ;
+; |part3|Add5~9   ; |part3|Add5~9    ; out0             ;
+; |part3|Add5~10  ; |part3|Add5~10   ; out0             ;
+; |part3|Add5~11  ; |part3|Add5~11   ; out0             ;
+; |part3|Add6~7   ; |part3|Add6~7    ; out0             ;
+; |part3|Add6~8   ; |part3|Add6~8    ; out0             ;
+; |part3|Add6~9   ; |part3|Add6~9    ; out0             ;
+; |part3|Add6~10  ; |part3|Add6~10   ; out0             ;
+; |part3|Add6~11  ; |part3|Add6~11   ; out0             ;
+; |part3|Add6~12  ; |part3|Add6~12   ; out0             ;
+; |part3|Add6~13  ; |part3|Add6~13   ; out0             ;
+; |part3|Add7~0   ; |part3|Add7~0    ; out0             ;
+; |part3|Add8~1   ; |part3|Add8~1    ; out0             ;
+; |part3|Add8~3   ; |part3|Add8~3    ; out0             ;
+; |part3|Add9~0   ; |part3|Add9~0    ; out0             ;
+; |part3|Add9~2   ; |part3|Add9~2    ; out0             ;
+; |part3|Add9~5   ; |part3|Add9~5    ; out0             ;
+; |part3|Add10~1  ; |part3|Add10~1   ; out0             ;
+; |part3|Add10~2  ; |part3|Add10~2   ; out0             ;
+; |part3|Add10~3  ; |part3|Add10~3   ; out0             ;
+; |part3|Add10~5  ; |part3|Add10~5   ; out0             ;
+; |part3|Add10~6  ; |part3|Add10~6   ; out0             ;
+; |part3|Add10~7  ; |part3|Add10~7   ; out0             ;
+; |part3|Add11~0  ; |part3|Add11~0   ; out0             ;
+; |part3|Add11~3  ; |part3|Add11~3   ; out0             ;
+; |part3|Add11~5  ; |part3|Add11~5   ; out0             ;
+; |part3|Add11~6  ; |part3|Add11~6   ; out0             ;
+; |part3|Add11~7  ; |part3|Add11~7   ; out0             ;
+; |part3|Add11~8  ; |part3|Add11~8   ; out0             ;
+; |part3|Add11~9  ; |part3|Add11~9   ; out0             ;
+; |part3|Add12~1  ; |part3|Add12~1   ; out0             ;
+; |part3|Add12~3  ; |part3|Add12~3   ; out0             ;
+; |part3|Add12~5  ; |part3|Add12~5   ; out0             ;
+; |part3|Add12~6  ; |part3|Add12~6   ; out0             ;
+; |part3|Add12~7  ; |part3|Add12~7   ; out0             ;
+; |part3|Add12~8  ; |part3|Add12~8   ; out0             ;
+; |part3|Add12~9  ; |part3|Add12~9   ; out0             ;
+; |part3|Add12~10 ; |part3|Add12~10  ; out0             ;
+; |part3|Add12~11 ; |part3|Add12~11  ; out0             ;
+; |part3|Add13~7  ; |part3|Add13~7   ; out0             ;
+; |part3|Add13~8  ; |part3|Add13~8   ; out0             ;
+; |part3|Add13~9  ; |part3|Add13~9   ; out0             ;
+; |part3|Add13~10 ; |part3|Add13~10  ; out0             ;
+; |part3|Add13~11 ; |part3|Add13~11  ; out0             ;
+; |part3|Add13~12 ; |part3|Add13~12  ; out0             ;
+; |part3|Add13~13 ; |part3|Add13~13  ; out0             ;
+; |part3|Add15~1  ; |part3|Add15~1   ; out0             ;
+; |part3|Add15~4  ; |part3|Add15~4   ; out0             ;
+; |part3|Add15~6  ; |part3|Add15~6   ; out0             ;
+; |part3|Add15~14 ; |part3|Add15~14  ; out0             ;
+; |part3|Add15~16 ; |part3|Add15~16  ; out0             ;
+; |part3|Add15~18 ; |part3|Add15~18  ; out0             ;
+; |part3|Add15~19 ; |part3|Add15~19  ; out0             ;
+; |part3|Add15~20 ; |part3|Add15~20  ; out0             ;
+; |part3|Add15~21 ; |part3|Add15~21  ; out0             ;
+; |part3|Add15~22 ; |part3|Add15~22  ; out0             ;
+; |part3|Add15~23 ; |part3|Add15~23  ; out0             ;
+; |part3|Add15~24 ; |part3|Add15~24  ; out0             ;
+; |part3|Add15~25 ; |part3|Add15~25  ; out0             ;
+; |part3|Add15~26 ; |part3|Add15~26  ; out0             ;
+; |part3|Add15~27 ; |part3|Add15~27  ; out0             ;
+; |part3|Add15~28 ; |part3|Add15~28  ; out0             ;
+; |part3|Add15~29 ; |part3|Add15~29  ; out0             ;
+; |part3|Add15~30 ; |part3|Add15~30  ; out0             ;
+; |part3|Add15~31 ; |part3|Add15~31  ; out0             ;
+; |part3|Add15~32 ; |part3|Add15~32  ; out0             ;
++-----------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Mon Oct 02 18:43:57 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off part3 -c part3
+Info: Using vector source file "C:/Users/Niruyan/Desktop/eecs3201lab2/part3/part3.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      67.64 %
+Info: Number of transitions in simulation is 2294
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 188 megabytes
+    Info: Processing ended: Mon Oct 02 18:43:58 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

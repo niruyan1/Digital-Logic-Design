@@ -1,0 +1,911 @@
+Simulator report for part2
+Wed Oct 18 22:14:52 2017
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 539 nodes    ;
+; Simulation Coverage         ;      56.96 % ;
+; Total Number of Transitions ; 1624         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      56.96 % ;
+; Total nodes checked                                 ; 539          ;
+; Total output ports checked                          ; 539          ;
+; Total output ports with complete 1/0-value coverage ; 307          ;
+; Total output ports with no 1/0-value coverage       ; 203          ;
+; Total output ports with no 1-value coverage         ; 203          ;
+; Total output ports with no 0-value coverage         ; 232          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                  ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |part2|BIN[7]               ; |part2|BIN[7]               ; regout           ;
+; |part2|BIN[4]               ; |part2|BIN[4]               ; regout           ;
+; |part2|BIN[3]               ; |part2|BIN[3]               ; regout           ;
+; |part2|BIN[2]               ; |part2|BIN[2]               ; regout           ;
+; |part2|SW[0]                ; |part2|SW[0]                ; out              ;
+; |part2|SW[1]                ; |part2|SW[1]                ; out              ;
+; |part2|SW[2]                ; |part2|SW[2]                ; out              ;
+; |part2|SW[3]                ; |part2|SW[3]                ; out              ;
+; |part2|SW[4]                ; |part2|SW[4]                ; out              ;
+; |part2|SW[5]                ; |part2|SW[5]                ; out              ;
+; |part2|SW[6]                ; |part2|SW[6]                ; out              ;
+; |part2|SW[7]                ; |part2|SW[7]                ; out              ;
+; |part2|SW[8]                ; |part2|SW[8]                ; out              ;
+; |part2|SW[9]                ; |part2|SW[9]                ; out              ;
+; |part2|KEY                  ; |part2|KEY                  ; out              ;
+; |part2|HEX0[0]              ; |part2|HEX0[0]              ; pin_out          ;
+; |part2|HEX0[1]              ; |part2|HEX0[1]              ; pin_out          ;
+; |part2|HEX0[2]              ; |part2|HEX0[2]              ; pin_out          ;
+; |part2|HEX0[3]              ; |part2|HEX0[3]              ; pin_out          ;
+; |part2|HEX0[4]              ; |part2|HEX0[4]              ; pin_out          ;
+; |part2|HEX0[5]              ; |part2|HEX0[5]              ; pin_out          ;
+; |part2|HEX1[1]              ; |part2|HEX1[1]              ; pin_out          ;
+; |part2|HEX1[2]              ; |part2|HEX1[2]              ; pin_out          ;
+; |part2|HEX1[3]              ; |part2|HEX1[3]              ; pin_out          ;
+; |part2|HEX1[4]              ; |part2|HEX1[4]              ; pin_out          ;
+; |part2|HEX1[5]              ; |part2|HEX1[5]              ; pin_out          ;
+; |part2|HEX1[6]              ; |part2|HEX1[6]              ; pin_out          ;
+; |part2|HEX2[0]              ; |part2|HEX2[0]              ; pin_out          ;
+; |part2|HEX2[1]              ; |part2|HEX2[1]              ; pin_out          ;
+; |part2|HEX2[2]              ; |part2|HEX2[2]              ; pin_out          ;
+; |part2|HEX2[3]              ; |part2|HEX2[3]              ; pin_out          ;
+; |part2|HEX2[4]              ; |part2|HEX2[4]              ; pin_out          ;
+; |part2|HEX2[5]              ; |part2|HEX2[5]              ; pin_out          ;
+; |part2|HEX2[6]              ; |part2|HEX2[6]              ; pin_out          ;
+; |part2|HEX3[0]              ; |part2|HEX3[0]              ; pin_out          ;
+; |part2|HEX3[1]              ; |part2|HEX3[1]              ; pin_out          ;
+; |part2|HEX3[2]              ; |part2|HEX3[2]              ; pin_out          ;
+; |part2|HEX3[3]              ; |part2|HEX3[3]              ; pin_out          ;
+; |part2|HEX3[4]              ; |part2|HEX3[4]              ; pin_out          ;
+; |part2|HEX3[5]              ; |part2|HEX3[5]              ; pin_out          ;
+; |part2|HEX3[6]              ; |part2|HEX3[6]              ; pin_out          ;
+; |part2|fadder:add1|Z~2      ; |part2|fadder:add1|Z~2      ; out0             ;
+; |part2|fadder:add1|Z~3      ; |part2|fadder:add1|Z~3      ; out0             ;
+; |part2|fadder:add1|Z~4      ; |part2|fadder:add1|Z~4      ; out0             ;
+; |part2|fadder:add1|Z~7      ; |part2|fadder:add1|Z~7      ; out0             ;
+; |part2|fadder:add1|Z~8      ; |part2|fadder:add1|Z~8      ; out0             ;
+; |part2|fadder:add1|Z~9      ; |part2|fadder:add1|Z~9      ; out0             ;
+; |part2|fadder:add1|Z~10     ; |part2|fadder:add1|Z~10     ; out0             ;
+; |part2|fadder:add1|Z~11     ; |part2|fadder:add1|Z~11     ; out0             ;
+; |part2|fadder:add1|Z~12     ; |part2|fadder:add1|Z~12     ; out0             ;
+; |part2|fadder:add1|Z~13     ; |part2|fadder:add1|Z~13     ; out0             ;
+; |part2|fadder:add1|Z~14     ; |part2|fadder:add1|Z~14     ; out0             ;
+; |part2|fadder:add1|Z~15     ; |part2|fadder:add1|Z~15     ; out0             ;
+; |part2|fadder:add1|Z~16     ; |part2|fadder:add1|Z~16     ; out0             ;
+; |part2|fadder:add1|Z~17     ; |part2|fadder:add1|Z~17     ; out0             ;
+; |part2|fadder:add1|Z~18     ; |part2|fadder:add1|Z~18     ; out0             ;
+; |part2|fadder:add1|Z~19     ; |part2|fadder:add1|Z~19     ; out0             ;
+; |part2|fadder:add1|Z~20     ; |part2|fadder:add1|Z~20     ; out0             ;
+; |part2|fadder:add1|Z~21     ; |part2|fadder:add1|Z~21     ; out0             ;
+; |part2|fadder:add1|Z~22     ; |part2|fadder:add1|Z~22     ; out0             ;
+; |part2|fadder:add1|Z~23     ; |part2|fadder:add1|Z~23     ; out0             ;
+; |part2|fadder:add1|Z~26     ; |part2|fadder:add1|Z~26     ; out0             ;
+; |part2|fadder:add1|Z~27     ; |part2|fadder:add1|Z~27     ; out0             ;
+; |part2|fadder:add1|Z~28     ; |part2|fadder:add1|Z~28     ; out0             ;
+; |part2|fadder:add1|Z~31     ; |part2|fadder:add1|Z~31     ; out0             ;
+; |part2|fadder:add1|Z~64     ; |part2|fadder:add1|Z~64     ; out              ;
+; |part2|fadder:add1|Z~68     ; |part2|fadder:add1|Z~68     ; out              ;
+; |part2|fadder:add1|Z~69     ; |part2|fadder:add1|Z~69     ; out              ;
+; |part2|fadder:add1|Z~70     ; |part2|fadder:add1|Z~70     ; out              ;
+; |part2|fadder:add1|Z~71     ; |part2|fadder:add1|Z~71     ; out              ;
+; |part2|fadder:add1|Z~72     ; |part2|fadder:add1|Z~72     ; out              ;
+; |part2|fadder:add1|Z~76     ; |part2|fadder:add1|Z~76     ; out              ;
+; |part2|fadder:add1|Z~77     ; |part2|fadder:add1|Z~77     ; out              ;
+; |part2|fadder:add1|Z~78     ; |part2|fadder:add1|Z~78     ; out              ;
+; |part2|fadder:add1|Z~79     ; |part2|fadder:add1|Z~79     ; out              ;
+; |part2|fadder:add1|Z~80     ; |part2|fadder:add1|Z~80     ; out              ;
+; |part2|fadder:add1|Z~81     ; |part2|fadder:add1|Z~81     ; out              ;
+; |part2|fadder:add1|Z~82     ; |part2|fadder:add1|Z~82     ; out              ;
+; |part2|fadder:add1|Z~83     ; |part2|fadder:add1|Z~83     ; out              ;
+; |part2|fadder:add1|Z~84     ; |part2|fadder:add1|Z~84     ; out              ;
+; |part2|fadder:add1|Z~85     ; |part2|fadder:add1|Z~85     ; out              ;
+; |part2|fadder:add1|Z~86     ; |part2|fadder:add1|Z~86     ; out              ;
+; |part2|fadder:add1|Z~87     ; |part2|fadder:add1|Z~87     ; out              ;
+; |part2|fadder:add1|Z[7]     ; |part2|fadder:add1|Z[7]     ; out              ;
+; |part2|fadder:add1|Z[6]     ; |part2|fadder:add1|Z[6]     ; out              ;
+; |part2|fadder:add1|Z[5]     ; |part2|fadder:add1|Z[5]     ; out              ;
+; |part2|fadder:add1|Z[4]     ; |part2|fadder:add1|Z[4]     ; out              ;
+; |part2|fadder:add1|Z[3]     ; |part2|fadder:add1|Z[3]     ; out              ;
+; |part2|fadder:add1|Z[2]     ; |part2|fadder:add1|Z[2]     ; out              ;
+; |part2|fadder:add1|Z[1]     ; |part2|fadder:add1|Z[1]     ; out              ;
+; |part2|fadder:add1|Z[0]     ; |part2|fadder:add1|Z[0]     ; out              ;
+; |part2|disp:disp0|HEX[1]    ; |part2|disp:disp0|HEX[1]    ; out0             ;
+; |part2|disp:disp0|HEX[2]    ; |part2|disp:disp0|HEX[2]    ; out0             ;
+; |part2|disp:disp0|HEX[0]    ; |part2|disp:disp0|HEX[0]    ; out0             ;
+; |part2|disp:disp0|HEX~12    ; |part2|disp:disp0|HEX~12    ; out0             ;
+; |part2|disp:disp0|HEX~13    ; |part2|disp:disp0|HEX~13    ; out0             ;
+; |part2|disp:disp0|HEX~16    ; |part2|disp:disp0|HEX~16    ; out0             ;
+; |part2|disp:disp0|HEX~17    ; |part2|disp:disp0|HEX~17    ; out0             ;
+; |part2|disp:disp0|HEX~18    ; |part2|disp:disp0|HEX~18    ; out0             ;
+; |part2|disp:disp0|HEX[3]    ; |part2|disp:disp0|HEX[3]    ; out0             ;
+; |part2|disp:disp0|HEX~20    ; |part2|disp:disp0|HEX~20    ; out0             ;
+; |part2|disp:disp0|HEX~22    ; |part2|disp:disp0|HEX~22    ; out0             ;
+; |part2|disp:disp0|HEX~25    ; |part2|disp:disp0|HEX~25    ; out0             ;
+; |part2|disp:disp0|HEX~26    ; |part2|disp:disp0|HEX~26    ; out0             ;
+; |part2|disp:disp0|HEX[4]    ; |part2|disp:disp0|HEX[4]    ; out0             ;
+; |part2|disp:disp0|HEX~32    ; |part2|disp:disp0|HEX~32    ; out0             ;
+; |part2|disp:disp0|HEX~33    ; |part2|disp:disp0|HEX~33    ; out0             ;
+; |part2|disp:disp0|HEX~34    ; |part2|disp:disp0|HEX~34    ; out0             ;
+; |part2|disp:disp0|HEX~35    ; |part2|disp:disp0|HEX~35    ; out0             ;
+; |part2|disp:disp0|HEX[5]    ; |part2|disp:disp0|HEX[5]    ; out0             ;
+; |part2|disp:disp0|HEX~38    ; |part2|disp:disp0|HEX~38    ; out0             ;
+; |part2|disp:disp0|HEX~40    ; |part2|disp:disp0|HEX~40    ; out0             ;
+; |part2|disp:disp0|HEX~48    ; |part2|disp:disp0|HEX~48    ; out0             ;
+; |part2|disp:disp1|HEX~1     ; |part2|disp:disp1|HEX~1     ; out0             ;
+; |part2|disp:disp1|HEX~2     ; |part2|disp:disp1|HEX~2     ; out0             ;
+; |part2|disp:disp1|HEX~3     ; |part2|disp:disp1|HEX~3     ; out0             ;
+; |part2|disp:disp1|HEX~4     ; |part2|disp:disp1|HEX~4     ; out0             ;
+; |part2|disp:disp1|HEX[1]    ; |part2|disp:disp1|HEX[1]    ; out0             ;
+; |part2|disp:disp1|HEX~8     ; |part2|disp:disp1|HEX~8     ; out0             ;
+; |part2|disp:disp1|HEX~9     ; |part2|disp:disp1|HEX~9     ; out0             ;
+; |part2|disp:disp1|HEX[2]    ; |part2|disp:disp1|HEX[2]    ; out0             ;
+; |part2|disp:disp1|HEX~12    ; |part2|disp:disp1|HEX~12    ; out0             ;
+; |part2|disp:disp1|HEX~13    ; |part2|disp:disp1|HEX~13    ; out0             ;
+; |part2|disp:disp1|HEX~16    ; |part2|disp:disp1|HEX~16    ; out0             ;
+; |part2|disp:disp1|HEX~17    ; |part2|disp:disp1|HEX~17    ; out0             ;
+; |part2|disp:disp1|HEX~18    ; |part2|disp:disp1|HEX~18    ; out0             ;
+; |part2|disp:disp1|HEX[3]    ; |part2|disp:disp1|HEX[3]    ; out0             ;
+; |part2|disp:disp1|HEX~26    ; |part2|disp:disp1|HEX~26    ; out0             ;
+; |part2|disp:disp1|HEX[4]    ; |part2|disp:disp1|HEX[4]    ; out0             ;
+; |part2|disp:disp1|HEX[5]    ; |part2|disp:disp1|HEX[5]    ; out0             ;
+; |part2|disp:disp1|HEX~42    ; |part2|disp:disp1|HEX~42    ; out0             ;
+; |part2|disp:disp1|HEX~43    ; |part2|disp:disp1|HEX~43    ; out0             ;
+; |part2|disp:disp1|HEX~44    ; |part2|disp:disp1|HEX~44    ; out0             ;
+; |part2|disp:disp1|HEX~45    ; |part2|disp:disp1|HEX~45    ; out0             ;
+; |part2|disp:disp1|HEX~47    ; |part2|disp:disp1|HEX~47    ; out0             ;
+; |part2|disp:disp1|HEX~48    ; |part2|disp:disp1|HEX~48    ; out0             ;
+; |part2|disp:disp1|HEX[6]    ; |part2|disp:disp1|HEX[6]    ; out0             ;
+; |part2|disp:disp2|HEX~3     ; |part2|disp:disp2|HEX~3     ; out0             ;
+; |part2|disp:disp2|HEX~4     ; |part2|disp:disp2|HEX~4     ; out0             ;
+; |part2|disp:disp2|HEX[1]    ; |part2|disp:disp2|HEX[1]    ; out0             ;
+; |part2|disp:disp2|HEX~6     ; |part2|disp:disp2|HEX~6     ; out0             ;
+; |part2|disp:disp2|HEX~7     ; |part2|disp:disp2|HEX~7     ; out0             ;
+; |part2|disp:disp2|HEX~8     ; |part2|disp:disp2|HEX~8     ; out0             ;
+; |part2|disp:disp2|HEX~9     ; |part2|disp:disp2|HEX~9     ; out0             ;
+; |part2|disp:disp2|HEX[2]    ; |part2|disp:disp2|HEX[2]    ; out0             ;
+; |part2|disp:disp2|HEX[0]    ; |part2|disp:disp2|HEX[0]    ; out0             ;
+; |part2|disp:disp2|HEX~12    ; |part2|disp:disp2|HEX~12    ; out0             ;
+; |part2|disp:disp2|HEX~13    ; |part2|disp:disp2|HEX~13    ; out0             ;
+; |part2|disp:disp2|HEX~16    ; |part2|disp:disp2|HEX~16    ; out0             ;
+; |part2|disp:disp2|HEX~17    ; |part2|disp:disp2|HEX~17    ; out0             ;
+; |part2|disp:disp2|HEX~18    ; |part2|disp:disp2|HEX~18    ; out0             ;
+; |part2|disp:disp2|HEX[3]    ; |part2|disp:disp2|HEX[3]    ; out0             ;
+; |part2|disp:disp2|HEX~20    ; |part2|disp:disp2|HEX~20    ; out0             ;
+; |part2|disp:disp2|HEX~22    ; |part2|disp:disp2|HEX~22    ; out0             ;
+; |part2|disp:disp2|HEX~25    ; |part2|disp:disp2|HEX~25    ; out0             ;
+; |part2|disp:disp2|HEX~26    ; |part2|disp:disp2|HEX~26    ; out0             ;
+; |part2|disp:disp2|HEX[4]    ; |part2|disp:disp2|HEX[4]    ; out0             ;
+; |part2|disp:disp2|HEX~32    ; |part2|disp:disp2|HEX~32    ; out0             ;
+; |part2|disp:disp2|HEX~33    ; |part2|disp:disp2|HEX~33    ; out0             ;
+; |part2|disp:disp2|HEX~34    ; |part2|disp:disp2|HEX~34    ; out0             ;
+; |part2|disp:disp2|HEX~35    ; |part2|disp:disp2|HEX~35    ; out0             ;
+; |part2|disp:disp2|HEX[5]    ; |part2|disp:disp2|HEX[5]    ; out0             ;
+; |part2|disp:disp2|HEX~37    ; |part2|disp:disp2|HEX~37    ; out0             ;
+; |part2|disp:disp2|HEX~38    ; |part2|disp:disp2|HEX~38    ; out0             ;
+; |part2|disp:disp2|HEX~39    ; |part2|disp:disp2|HEX~39    ; out0             ;
+; |part2|disp:disp2|HEX~40    ; |part2|disp:disp2|HEX~40    ; out0             ;
+; |part2|disp:disp2|HEX~41    ; |part2|disp:disp2|HEX~41    ; out0             ;
+; |part2|disp:disp2|HEX~45    ; |part2|disp:disp2|HEX~45    ; out0             ;
+; |part2|disp:disp2|HEX~46    ; |part2|disp:disp2|HEX~46    ; out0             ;
+; |part2|disp:disp2|HEX~47    ; |part2|disp:disp2|HEX~47    ; out0             ;
+; |part2|disp:disp2|HEX~48    ; |part2|disp:disp2|HEX~48    ; out0             ;
+; |part2|disp:disp2|HEX~49    ; |part2|disp:disp2|HEX~49    ; out0             ;
+; |part2|disp:disp2|HEX[6]    ; |part2|disp:disp2|HEX[6]    ; out0             ;
+; |part2|disp:disp3|HEX~3     ; |part2|disp:disp3|HEX~3     ; out0             ;
+; |part2|disp:disp3|HEX~4     ; |part2|disp:disp3|HEX~4     ; out0             ;
+; |part2|disp:disp3|HEX[1]    ; |part2|disp:disp3|HEX[1]    ; out0             ;
+; |part2|disp:disp3|HEX~6     ; |part2|disp:disp3|HEX~6     ; out0             ;
+; |part2|disp:disp3|HEX~7     ; |part2|disp:disp3|HEX~7     ; out0             ;
+; |part2|disp:disp3|HEX~8     ; |part2|disp:disp3|HEX~8     ; out0             ;
+; |part2|disp:disp3|HEX~9     ; |part2|disp:disp3|HEX~9     ; out0             ;
+; |part2|disp:disp3|HEX[2]    ; |part2|disp:disp3|HEX[2]    ; out0             ;
+; |part2|disp:disp3|HEX[0]    ; |part2|disp:disp3|HEX[0]    ; out0             ;
+; |part2|disp:disp3|HEX~12    ; |part2|disp:disp3|HEX~12    ; out0             ;
+; |part2|disp:disp3|HEX~13    ; |part2|disp:disp3|HEX~13    ; out0             ;
+; |part2|disp:disp3|HEX~16    ; |part2|disp:disp3|HEX~16    ; out0             ;
+; |part2|disp:disp3|HEX~17    ; |part2|disp:disp3|HEX~17    ; out0             ;
+; |part2|disp:disp3|HEX~18    ; |part2|disp:disp3|HEX~18    ; out0             ;
+; |part2|disp:disp3|HEX[3]    ; |part2|disp:disp3|HEX[3]    ; out0             ;
+; |part2|disp:disp3|HEX~20    ; |part2|disp:disp3|HEX~20    ; out0             ;
+; |part2|disp:disp3|HEX~22    ; |part2|disp:disp3|HEX~22    ; out0             ;
+; |part2|disp:disp3|HEX~25    ; |part2|disp:disp3|HEX~25    ; out0             ;
+; |part2|disp:disp3|HEX~26    ; |part2|disp:disp3|HEX~26    ; out0             ;
+; |part2|disp:disp3|HEX~27    ; |part2|disp:disp3|HEX~27    ; out0             ;
+; |part2|disp:disp3|HEX~28    ; |part2|disp:disp3|HEX~28    ; out0             ;
+; |part2|disp:disp3|HEX~29    ; |part2|disp:disp3|HEX~29    ; out0             ;
+; |part2|disp:disp3|HEX[4]    ; |part2|disp:disp3|HEX[4]    ; out0             ;
+; |part2|disp:disp3|HEX~32    ; |part2|disp:disp3|HEX~32    ; out0             ;
+; |part2|disp:disp3|HEX~33    ; |part2|disp:disp3|HEX~33    ; out0             ;
+; |part2|disp:disp3|HEX~34    ; |part2|disp:disp3|HEX~34    ; out0             ;
+; |part2|disp:disp3|HEX~35    ; |part2|disp:disp3|HEX~35    ; out0             ;
+; |part2|disp:disp3|HEX[5]    ; |part2|disp:disp3|HEX[5]    ; out0             ;
+; |part2|disp:disp3|HEX~37    ; |part2|disp:disp3|HEX~37    ; out0             ;
+; |part2|disp:disp3|HEX~38    ; |part2|disp:disp3|HEX~38    ; out0             ;
+; |part2|disp:disp3|HEX~39    ; |part2|disp:disp3|HEX~39    ; out0             ;
+; |part2|disp:disp3|HEX~40    ; |part2|disp:disp3|HEX~40    ; out0             ;
+; |part2|disp:disp3|HEX~41    ; |part2|disp:disp3|HEX~41    ; out0             ;
+; |part2|disp:disp3|HEX~45    ; |part2|disp:disp3|HEX~45    ; out0             ;
+; |part2|disp:disp3|HEX~46    ; |part2|disp:disp3|HEX~46    ; out0             ;
+; |part2|disp:disp3|HEX~47    ; |part2|disp:disp3|HEX~47    ; out0             ;
+; |part2|disp:disp3|HEX~48    ; |part2|disp:disp3|HEX~48    ; out0             ;
+; |part2|disp:disp3|HEX~49    ; |part2|disp:disp3|HEX~49    ; out0             ;
+; |part2|disp:disp3|HEX[6]    ; |part2|disp:disp3|HEX[6]    ; out0             ;
+; |part2|fadder:add1|Add0~1   ; |part2|fadder:add1|Add0~1   ; out0             ;
+; |part2|fadder:add1|Add1~0   ; |part2|fadder:add1|Add1~0   ; out0             ;
+; |part2|fadder:add1|Add1~2   ; |part2|fadder:add1|Add1~2   ; out0             ;
+; |part2|fadder:add1|Add2~1   ; |part2|fadder:add1|Add2~1   ; out0             ;
+; |part2|fadder:add1|Add2~2   ; |part2|fadder:add1|Add2~2   ; out0             ;
+; |part2|fadder:add1|Add2~3   ; |part2|fadder:add1|Add2~3   ; out0             ;
+; |part2|fadder:add1|Add2~4   ; |part2|fadder:add1|Add2~4   ; out0             ;
+; |part2|fadder:add1|Add3~0   ; |part2|fadder:add1|Add3~0   ; out0             ;
+; |part2|fadder:add1|Add3~2   ; |part2|fadder:add1|Add3~2   ; out0             ;
+; |part2|fadder:add1|Add3~4   ; |part2|fadder:add1|Add3~4   ; out0             ;
+; |part2|fadder:add1|Add4~0   ; |part2|fadder:add1|Add4~0   ; out0             ;
+; |part2|fadder:add1|Add4~1   ; |part2|fadder:add1|Add4~1   ; out0             ;
+; |part2|fadder:add1|Add4~2   ; |part2|fadder:add1|Add4~2   ; out0             ;
+; |part2|fadder:add1|Add4~4   ; |part2|fadder:add1|Add4~4   ; out0             ;
+; |part2|fadder:add1|Add5~0   ; |part2|fadder:add1|Add5~0   ; out0             ;
+; |part2|fadder:add1|Add5~2   ; |part2|fadder:add1|Add5~2   ; out0             ;
+; |part2|fadder:add1|Add5~4   ; |part2|fadder:add1|Add5~4   ; out0             ;
+; |part2|fadder:add1|Add6~0   ; |part2|fadder:add1|Add6~0   ; out0             ;
+; |part2|fadder:add1|Add6~1   ; |part2|fadder:add1|Add6~1   ; out0             ;
+; |part2|fadder:add1|Add6~2   ; |part2|fadder:add1|Add6~2   ; out0             ;
+; |part2|fadder:add1|Add6~3   ; |part2|fadder:add1|Add6~3   ; out0             ;
+; |part2|fadder:add1|Add6~4   ; |part2|fadder:add1|Add6~4   ; out0             ;
+; |part2|fadder:add1|Add6~5   ; |part2|fadder:add1|Add6~5   ; out0             ;
+; |part2|fadder:add1|Add6~6   ; |part2|fadder:add1|Add6~6   ; out0             ;
+; |part2|fadder:add1|Add8~0   ; |part2|fadder:add1|Add8~0   ; out0             ;
+; |part2|fadder:add1|Add9~0   ; |part2|fadder:add1|Add9~0   ; out0             ;
+; |part2|fadder:add1|Add9~1   ; |part2|fadder:add1|Add9~1   ; out0             ;
+; |part2|fadder:add1|Add9~2   ; |part2|fadder:add1|Add9~2   ; out0             ;
+; |part2|fadder:add1|Add9~3   ; |part2|fadder:add1|Add9~3   ; out0             ;
+; |part2|fadder:add1|Add9~4   ; |part2|fadder:add1|Add9~4   ; out0             ;
+; |part2|fadder:add1|Add10~0  ; |part2|fadder:add1|Add10~0  ; out0             ;
+; |part2|fadder:add1|Add10~1  ; |part2|fadder:add1|Add10~1  ; out0             ;
+; |part2|fadder:add1|Add10~2  ; |part2|fadder:add1|Add10~2  ; out0             ;
+; |part2|fadder:add1|Add10~3  ; |part2|fadder:add1|Add10~3  ; out0             ;
+; |part2|fadder:add1|Add10~4  ; |part2|fadder:add1|Add10~4  ; out0             ;
+; |part2|fadder:add1|Add11~0  ; |part2|fadder:add1|Add11~0  ; out0             ;
+; |part2|fadder:add1|Add11~1  ; |part2|fadder:add1|Add11~1  ; out0             ;
+; |part2|fadder:add1|Add11~2  ; |part2|fadder:add1|Add11~2  ; out0             ;
+; |part2|fadder:add1|Add11~3  ; |part2|fadder:add1|Add11~3  ; out0             ;
+; |part2|fadder:add1|Add11~4  ; |part2|fadder:add1|Add11~4  ; out0             ;
+; |part2|fadder:add1|Add12~0  ; |part2|fadder:add1|Add12~0  ; out0             ;
+; |part2|fadder:add1|Add12~1  ; |part2|fadder:add1|Add12~1  ; out0             ;
+; |part2|fadder:add1|Add12~2  ; |part2|fadder:add1|Add12~2  ; out0             ;
+; |part2|fadder:add1|Add12~3  ; |part2|fadder:add1|Add12~3  ; out0             ;
+; |part2|fadder:add1|Add13~0  ; |part2|fadder:add1|Add13~0  ; out0             ;
+; |part2|fadder:add1|Add13~1  ; |part2|fadder:add1|Add13~1  ; out0             ;
+; |part2|fadder:add1|Add13~2  ; |part2|fadder:add1|Add13~2  ; out0             ;
+; |part2|fadder:add1|Add13~3  ; |part2|fadder:add1|Add13~3  ; out0             ;
+; |part2|fadder:add1|Add13~4  ; |part2|fadder:add1|Add13~4  ; out0             ;
+; |part2|fadder:add1|Add13~5  ; |part2|fadder:add1|Add13~5  ; out0             ;
+; |part2|fadder:add1|Add13~6  ; |part2|fadder:add1|Add13~6  ; out0             ;
+; |part2|fadder:add1|Add14~0  ; |part2|fadder:add1|Add14~0  ; out0             ;
+; |part2|fadder:add1|Add14~1  ; |part2|fadder:add1|Add14~1  ; out0             ;
+; |part2|fadder:add1|Add14~3  ; |part2|fadder:add1|Add14~3  ; out0             ;
+; |part2|fadder:add1|Add14~4  ; |part2|fadder:add1|Add14~4  ; out0             ;
+; |part2|fadder:add1|Add14~5  ; |part2|fadder:add1|Add14~5  ; out0             ;
+; |part2|fadder:add1|Add14~6  ; |part2|fadder:add1|Add14~6  ; out0             ;
+; |part2|fadder:add1|Add14~7  ; |part2|fadder:add1|Add14~7  ; out0             ;
+; |part2|fadder:add1|Add14~8  ; |part2|fadder:add1|Add14~8  ; out0             ;
+; |part2|fadder:add1|Add14~9  ; |part2|fadder:add1|Add14~9  ; out0             ;
+; |part2|fadder:add1|Add14~10 ; |part2|fadder:add1|Add14~10 ; out0             ;
+; |part2|fadder:add1|Add14~11 ; |part2|fadder:add1|Add14~11 ; out0             ;
+; |part2|fadder:add1|Add14~12 ; |part2|fadder:add1|Add14~12 ; out0             ;
+; |part2|fadder:add1|Add14~13 ; |part2|fadder:add1|Add14~13 ; out0             ;
+; |part2|fadder:add1|Add14~14 ; |part2|fadder:add1|Add14~14 ; out0             ;
+; |part2|fadder:add1|Add14~15 ; |part2|fadder:add1|Add14~15 ; out0             ;
+; |part2|fadder:add1|Add14~16 ; |part2|fadder:add1|Add14~16 ; out0             ;
+; |part2|fadder:add1|Add14~17 ; |part2|fadder:add1|Add14~17 ; out0             ;
+; |part2|fadder:add1|Add14~18 ; |part2|fadder:add1|Add14~18 ; out0             ;
+; |part2|fadder:add1|Add14~19 ; |part2|fadder:add1|Add14~19 ; out0             ;
+; |part2|fadder:add1|Add14~20 ; |part2|fadder:add1|Add14~20 ; out0             ;
+; |part2|fadder:add1|Add14~21 ; |part2|fadder:add1|Add14~21 ; out0             ;
+; |part2|fadder:add1|Add14~22 ; |part2|fadder:add1|Add14~22 ; out0             ;
+; |part2|fadder:add1|Add14~23 ; |part2|fadder:add1|Add14~23 ; out0             ;
+; |part2|fadder:add1|Add14~24 ; |part2|fadder:add1|Add14~24 ; out0             ;
+; |part2|fadder:add1|Add14~25 ; |part2|fadder:add1|Add14~25 ; out0             ;
+; |part2|fadder:add1|Add14~26 ; |part2|fadder:add1|Add14~26 ; out0             ;
+; |part2|fadder:add1|Add14~27 ; |part2|fadder:add1|Add14~27 ; out0             ;
+; |part2|fadder:add1|Add14~28 ; |part2|fadder:add1|Add14~28 ; out0             ;
+; |part2|fadder:add1|Add14~29 ; |part2|fadder:add1|Add14~29 ; out0             ;
+; |part2|fadder:add1|Add14~30 ; |part2|fadder:add1|Add14~30 ; out0             ;
+; |part2|fadder:add1|Add14~31 ; |part2|fadder:add1|Add14~31 ; out0             ;
+; |part2|fadder:add1|Add14~32 ; |part2|fadder:add1|Add14~32 ; out0             ;
+; |part2|fadder:add1|Add15~0  ; |part2|fadder:add1|Add15~0  ; out0             ;
+; |part2|fadder:add1|Add15~2  ; |part2|fadder:add1|Add15~2  ; out0             ;
+; |part2|fadder:add1|Add15~7  ; |part2|fadder:add1|Add15~7  ; out0             ;
+; |part2|fadder:add1|Add15~8  ; |part2|fadder:add1|Add15~8  ; out0             ;
+; |part2|fadder:add1|Add15~10 ; |part2|fadder:add1|Add15~10 ; out0             ;
+; |part2|fadder:add1|Add15~12 ; |part2|fadder:add1|Add15~12 ; out0             ;
+; |part2|fadder:add1|Add15~13 ; |part2|fadder:add1|Add15~13 ; out0             ;
+; |part2|fadder:add1|Add15~15 ; |part2|fadder:add1|Add15~15 ; out0             ;
+; |part2|fadder:add1|Add15~17 ; |part2|fadder:add1|Add15~17 ; out0             ;
+; |part2|fadder:add1|Equal0~0 ; |part2|fadder:add1|Equal0~0 ; out0             ;
+; |part2|fadder:add1|Equal1~0 ; |part2|fadder:add1|Equal1~0 ; out0             ;
+; |part2|fadder:add1|Equal3~0 ; |part2|fadder:add1|Equal3~0 ; out0             ;
++-----------------------------+-----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                     ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |part2|SW[10]               ; |part2|SW[10]               ; out              ;
+; |part2|HEX1[0]              ; |part2|HEX1[0]              ; pin_out          ;
+; |part2|fadder:add1|Z~0      ; |part2|fadder:add1|Z~0      ; out0             ;
+; |part2|fadder:add1|Z~1      ; |part2|fadder:add1|Z~1      ; out0             ;
+; |part2|fadder:add1|Z~5      ; |part2|fadder:add1|Z~5      ; out0             ;
+; |part2|fadder:add1|Z~6      ; |part2|fadder:add1|Z~6      ; out0             ;
+; |part2|fadder:add1|Z~32     ; |part2|fadder:add1|Z~32     ; out              ;
+; |part2|fadder:add1|Z~33     ; |part2|fadder:add1|Z~33     ; out              ;
+; |part2|fadder:add1|Z~34     ; |part2|fadder:add1|Z~34     ; out              ;
+; |part2|fadder:add1|Z~35     ; |part2|fadder:add1|Z~35     ; out              ;
+; |part2|fadder:add1|Z~36     ; |part2|fadder:add1|Z~36     ; out              ;
+; |part2|fadder:add1|Z~37     ; |part2|fadder:add1|Z~37     ; out              ;
+; |part2|fadder:add1|Z~38     ; |part2|fadder:add1|Z~38     ; out              ;
+; |part2|fadder:add1|Z~39     ; |part2|fadder:add1|Z~39     ; out              ;
+; |part2|fadder:add1|Z~40     ; |part2|fadder:add1|Z~40     ; out              ;
+; |part2|fadder:add1|Z~41     ; |part2|fadder:add1|Z~41     ; out              ;
+; |part2|fadder:add1|Z~42     ; |part2|fadder:add1|Z~42     ; out              ;
+; |part2|fadder:add1|Z~43     ; |part2|fadder:add1|Z~43     ; out              ;
+; |part2|fadder:add1|Z~44     ; |part2|fadder:add1|Z~44     ; out              ;
+; |part2|fadder:add1|Z~45     ; |part2|fadder:add1|Z~45     ; out              ;
+; |part2|fadder:add1|Z~46     ; |part2|fadder:add1|Z~46     ; out              ;
+; |part2|fadder:add1|Z~47     ; |part2|fadder:add1|Z~47     ; out              ;
+; |part2|fadder:add1|Z~48     ; |part2|fadder:add1|Z~48     ; out              ;
+; |part2|fadder:add1|Z~49     ; |part2|fadder:add1|Z~49     ; out              ;
+; |part2|fadder:add1|Z~50     ; |part2|fadder:add1|Z~50     ; out              ;
+; |part2|fadder:add1|Z~51     ; |part2|fadder:add1|Z~51     ; out              ;
+; |part2|fadder:add1|Z~52     ; |part2|fadder:add1|Z~52     ; out              ;
+; |part2|fadder:add1|Z~53     ; |part2|fadder:add1|Z~53     ; out              ;
+; |part2|fadder:add1|Z~54     ; |part2|fadder:add1|Z~54     ; out              ;
+; |part2|fadder:add1|Z~55     ; |part2|fadder:add1|Z~55     ; out              ;
+; |part2|fadder:add1|Z~56     ; |part2|fadder:add1|Z~56     ; out              ;
+; |part2|fadder:add1|Z~57     ; |part2|fadder:add1|Z~57     ; out              ;
+; |part2|fadder:add1|Z~58     ; |part2|fadder:add1|Z~58     ; out              ;
+; |part2|fadder:add1|Z~59     ; |part2|fadder:add1|Z~59     ; out              ;
+; |part2|fadder:add1|Z~60     ; |part2|fadder:add1|Z~60     ; out              ;
+; |part2|fadder:add1|Z~61     ; |part2|fadder:add1|Z~61     ; out              ;
+; |part2|fadder:add1|Z~62     ; |part2|fadder:add1|Z~62     ; out              ;
+; |part2|fadder:add1|Z~63     ; |part2|fadder:add1|Z~63     ; out              ;
+; |part2|fadder:add1|Z~65     ; |part2|fadder:add1|Z~65     ; out              ;
+; |part2|fadder:add1|Z~66     ; |part2|fadder:add1|Z~66     ; out              ;
+; |part2|fadder:add1|Z~67     ; |part2|fadder:add1|Z~67     ; out              ;
+; |part2|fadder:add1|Z~73     ; |part2|fadder:add1|Z~73     ; out              ;
+; |part2|fadder:add1|Z~74     ; |part2|fadder:add1|Z~74     ; out              ;
+; |part2|fadder:add1|Z~75     ; |part2|fadder:add1|Z~75     ; out              ;
+; |part2|disp:disp0|HEX~0     ; |part2|disp:disp0|HEX~0     ; out0             ;
+; |part2|disp:disp0|HEX~1     ; |part2|disp:disp0|HEX~1     ; out0             ;
+; |part2|disp:disp0|HEX~2     ; |part2|disp:disp0|HEX~2     ; out0             ;
+; |part2|disp:disp0|HEX~3     ; |part2|disp:disp0|HEX~3     ; out0             ;
+; |part2|disp:disp0|HEX~4     ; |part2|disp:disp0|HEX~4     ; out0             ;
+; |part2|disp:disp0|HEX~8     ; |part2|disp:disp0|HEX~8     ; out0             ;
+; |part2|disp:disp0|HEX~14    ; |part2|disp:disp0|HEX~14    ; out0             ;
+; |part2|disp:disp0|HEX~15    ; |part2|disp:disp0|HEX~15    ; out0             ;
+; |part2|disp:disp0|HEX~21    ; |part2|disp:disp0|HEX~21    ; out0             ;
+; |part2|disp:disp0|HEX~23    ; |part2|disp:disp0|HEX~23    ; out0             ;
+; |part2|disp:disp0|HEX~24    ; |part2|disp:disp0|HEX~24    ; out0             ;
+; |part2|disp:disp0|HEX~27    ; |part2|disp:disp0|HEX~27    ; out0             ;
+; |part2|disp:disp0|HEX~28    ; |part2|disp:disp0|HEX~28    ; out0             ;
+; |part2|disp:disp0|HEX~29    ; |part2|disp:disp0|HEX~29    ; out0             ;
+; |part2|disp:disp0|HEX~31    ; |part2|disp:disp0|HEX~31    ; out0             ;
+; |part2|disp:disp0|HEX~42    ; |part2|disp:disp0|HEX~42    ; out0             ;
+; |part2|disp:disp0|HEX~43    ; |part2|disp:disp0|HEX~43    ; out0             ;
+; |part2|disp:disp0|HEX~44    ; |part2|disp:disp0|HEX~44    ; out0             ;
+; |part2|disp:disp0|HEX~46    ; |part2|disp:disp0|HEX~46    ; out0             ;
+; |part2|disp:disp0|HEX~49    ; |part2|disp:disp0|HEX~49    ; out0             ;
+; |part2|disp:disp0|HEX~50    ; |part2|disp:disp0|HEX~50    ; out0             ;
+; |part2|disp:disp1|HEX~0     ; |part2|disp:disp1|HEX~0     ; out0             ;
+; |part2|disp:disp1|HEX[0]    ; |part2|disp:disp1|HEX[0]    ; out0             ;
+; |part2|disp:disp1|HEX~14    ; |part2|disp:disp1|HEX~14    ; out0             ;
+; |part2|disp:disp1|HEX~15    ; |part2|disp:disp1|HEX~15    ; out0             ;
+; |part2|disp:disp1|HEX~20    ; |part2|disp:disp1|HEX~20    ; out0             ;
+; |part2|disp:disp1|HEX~21    ; |part2|disp:disp1|HEX~21    ; out0             ;
+; |part2|disp:disp1|HEX~22    ; |part2|disp:disp1|HEX~22    ; out0             ;
+; |part2|disp:disp1|HEX~23    ; |part2|disp:disp1|HEX~23    ; out0             ;
+; |part2|disp:disp1|HEX~24    ; |part2|disp:disp1|HEX~24    ; out0             ;
+; |part2|disp:disp1|HEX~25    ; |part2|disp:disp1|HEX~25    ; out0             ;
+; |part2|disp:disp1|HEX~27    ; |part2|disp:disp1|HEX~27    ; out0             ;
+; |part2|disp:disp1|HEX~28    ; |part2|disp:disp1|HEX~28    ; out0             ;
+; |part2|disp:disp1|HEX~29    ; |part2|disp:disp1|HEX~29    ; out0             ;
+; |part2|disp:disp1|HEX~31    ; |part2|disp:disp1|HEX~31    ; out0             ;
+; |part2|disp:disp1|HEX~32    ; |part2|disp:disp1|HEX~32    ; out0             ;
+; |part2|disp:disp1|HEX~33    ; |part2|disp:disp1|HEX~33    ; out0             ;
+; |part2|disp:disp1|HEX~34    ; |part2|disp:disp1|HEX~34    ; out0             ;
+; |part2|disp:disp1|HEX~35    ; |part2|disp:disp1|HEX~35    ; out0             ;
+; |part2|disp:disp1|HEX~40    ; |part2|disp:disp1|HEX~40    ; out0             ;
+; |part2|disp:disp1|HEX~46    ; |part2|disp:disp1|HEX~46    ; out0             ;
+; |part2|disp:disp1|HEX~49    ; |part2|disp:disp1|HEX~49    ; out0             ;
+; |part2|disp:disp1|HEX~50    ; |part2|disp:disp1|HEX~50    ; out0             ;
+; |part2|disp:disp2|HEX~0     ; |part2|disp:disp2|HEX~0     ; out0             ;
+; |part2|disp:disp2|HEX~1     ; |part2|disp:disp2|HEX~1     ; out0             ;
+; |part2|disp:disp2|HEX~2     ; |part2|disp:disp2|HEX~2     ; out0             ;
+; |part2|disp:disp2|HEX~14    ; |part2|disp:disp2|HEX~14    ; out0             ;
+; |part2|disp:disp2|HEX~15    ; |part2|disp:disp2|HEX~15    ; out0             ;
+; |part2|disp:disp2|HEX~21    ; |part2|disp:disp2|HEX~21    ; out0             ;
+; |part2|disp:disp2|HEX~23    ; |part2|disp:disp2|HEX~23    ; out0             ;
+; |part2|disp:disp2|HEX~24    ; |part2|disp:disp2|HEX~24    ; out0             ;
+; |part2|disp:disp2|HEX~27    ; |part2|disp:disp2|HEX~27    ; out0             ;
+; |part2|disp:disp2|HEX~28    ; |part2|disp:disp2|HEX~28    ; out0             ;
+; |part2|disp:disp2|HEX~29    ; |part2|disp:disp2|HEX~29    ; out0             ;
+; |part2|disp:disp2|HEX~31    ; |part2|disp:disp2|HEX~31    ; out0             ;
+; |part2|disp:disp2|HEX~42    ; |part2|disp:disp2|HEX~42    ; out0             ;
+; |part2|disp:disp2|HEX~43    ; |part2|disp:disp2|HEX~43    ; out0             ;
+; |part2|disp:disp2|HEX~44    ; |part2|disp:disp2|HEX~44    ; out0             ;
+; |part2|disp:disp2|HEX~50    ; |part2|disp:disp2|HEX~50    ; out0             ;
+; |part2|disp:disp3|HEX~0     ; |part2|disp:disp3|HEX~0     ; out0             ;
+; |part2|disp:disp3|HEX~1     ; |part2|disp:disp3|HEX~1     ; out0             ;
+; |part2|disp:disp3|HEX~2     ; |part2|disp:disp3|HEX~2     ; out0             ;
+; |part2|disp:disp3|HEX~14    ; |part2|disp:disp3|HEX~14    ; out0             ;
+; |part2|disp:disp3|HEX~15    ; |part2|disp:disp3|HEX~15    ; out0             ;
+; |part2|disp:disp3|HEX~21    ; |part2|disp:disp3|HEX~21    ; out0             ;
+; |part2|disp:disp3|HEX~23    ; |part2|disp:disp3|HEX~23    ; out0             ;
+; |part2|disp:disp3|HEX~24    ; |part2|disp:disp3|HEX~24    ; out0             ;
+; |part2|disp:disp3|HEX~31    ; |part2|disp:disp3|HEX~31    ; out0             ;
+; |part2|disp:disp3|HEX~42    ; |part2|disp:disp3|HEX~42    ; out0             ;
+; |part2|disp:disp3|HEX~43    ; |part2|disp:disp3|HEX~43    ; out0             ;
+; |part2|disp:disp3|HEX~44    ; |part2|disp:disp3|HEX~44    ; out0             ;
+; |part2|disp:disp3|HEX~50    ; |part2|disp:disp3|HEX~50    ; out0             ;
+; |part2|fadder:add1|Add0~0   ; |part2|fadder:add1|Add0~0   ; out0             ;
+; |part2|fadder:add1|Add1~1   ; |part2|fadder:add1|Add1~1   ; out0             ;
+; |part2|fadder:add1|Add1~3   ; |part2|fadder:add1|Add1~3   ; out0             ;
+; |part2|fadder:add1|Add2~0   ; |part2|fadder:add1|Add2~0   ; out0             ;
+; |part2|fadder:add1|Add2~5   ; |part2|fadder:add1|Add2~5   ; out0             ;
+; |part2|fadder:add1|Add3~1   ; |part2|fadder:add1|Add3~1   ; out0             ;
+; |part2|fadder:add1|Add3~3   ; |part2|fadder:add1|Add3~3   ; out0             ;
+; |part2|fadder:add1|Add3~5   ; |part2|fadder:add1|Add3~5   ; out0             ;
+; |part2|fadder:add1|Add3~6   ; |part2|fadder:add1|Add3~6   ; out0             ;
+; |part2|fadder:add1|Add3~7   ; |part2|fadder:add1|Add3~7   ; out0             ;
+; |part2|fadder:add1|Add4~3   ; |part2|fadder:add1|Add4~3   ; out0             ;
+; |part2|fadder:add1|Add4~5   ; |part2|fadder:add1|Add4~5   ; out0             ;
+; |part2|fadder:add1|Add4~6   ; |part2|fadder:add1|Add4~6   ; out0             ;
+; |part2|fadder:add1|Add4~7   ; |part2|fadder:add1|Add4~7   ; out0             ;
+; |part2|fadder:add1|Add4~8   ; |part2|fadder:add1|Add4~8   ; out0             ;
+; |part2|fadder:add1|Add4~9   ; |part2|fadder:add1|Add4~9   ; out0             ;
+; |part2|fadder:add1|Add5~1   ; |part2|fadder:add1|Add5~1   ; out0             ;
+; |part2|fadder:add1|Add5~3   ; |part2|fadder:add1|Add5~3   ; out0             ;
+; |part2|fadder:add1|Add5~5   ; |part2|fadder:add1|Add5~5   ; out0             ;
+; |part2|fadder:add1|Add5~6   ; |part2|fadder:add1|Add5~6   ; out0             ;
+; |part2|fadder:add1|Add5~7   ; |part2|fadder:add1|Add5~7   ; out0             ;
+; |part2|fadder:add1|Add5~8   ; |part2|fadder:add1|Add5~8   ; out0             ;
+; |part2|fadder:add1|Add5~9   ; |part2|fadder:add1|Add5~9   ; out0             ;
+; |part2|fadder:add1|Add5~10  ; |part2|fadder:add1|Add5~10  ; out0             ;
+; |part2|fadder:add1|Add5~11  ; |part2|fadder:add1|Add5~11  ; out0             ;
+; |part2|fadder:add1|Add6~7   ; |part2|fadder:add1|Add6~7   ; out0             ;
+; |part2|fadder:add1|Add6~8   ; |part2|fadder:add1|Add6~8   ; out0             ;
+; |part2|fadder:add1|Add6~9   ; |part2|fadder:add1|Add6~9   ; out0             ;
+; |part2|fadder:add1|Add6~10  ; |part2|fadder:add1|Add6~10  ; out0             ;
+; |part2|fadder:add1|Add6~11  ; |part2|fadder:add1|Add6~11  ; out0             ;
+; |part2|fadder:add1|Add6~12  ; |part2|fadder:add1|Add6~12  ; out0             ;
+; |part2|fadder:add1|Add6~13  ; |part2|fadder:add1|Add6~13  ; out0             ;
+; |part2|fadder:add1|Add7~0   ; |part2|fadder:add1|Add7~0   ; out0             ;
+; |part2|fadder:add1|Add8~1   ; |part2|fadder:add1|Add8~1   ; out0             ;
+; |part2|fadder:add1|Add8~3   ; |part2|fadder:add1|Add8~3   ; out0             ;
+; |part2|fadder:add1|Add9~5   ; |part2|fadder:add1|Add9~5   ; out0             ;
+; |part2|fadder:add1|Add10~5  ; |part2|fadder:add1|Add10~5  ; out0             ;
+; |part2|fadder:add1|Add10~6  ; |part2|fadder:add1|Add10~6  ; out0             ;
+; |part2|fadder:add1|Add10~7  ; |part2|fadder:add1|Add10~7  ; out0             ;
+; |part2|fadder:add1|Add11~5  ; |part2|fadder:add1|Add11~5  ; out0             ;
+; |part2|fadder:add1|Add11~6  ; |part2|fadder:add1|Add11~6  ; out0             ;
+; |part2|fadder:add1|Add11~7  ; |part2|fadder:add1|Add11~7  ; out0             ;
+; |part2|fadder:add1|Add11~8  ; |part2|fadder:add1|Add11~8  ; out0             ;
+; |part2|fadder:add1|Add11~9  ; |part2|fadder:add1|Add11~9  ; out0             ;
+; |part2|fadder:add1|Add12~5  ; |part2|fadder:add1|Add12~5  ; out0             ;
+; |part2|fadder:add1|Add12~6  ; |part2|fadder:add1|Add12~6  ; out0             ;
+; |part2|fadder:add1|Add12~7  ; |part2|fadder:add1|Add12~7  ; out0             ;
+; |part2|fadder:add1|Add12~8  ; |part2|fadder:add1|Add12~8  ; out0             ;
+; |part2|fadder:add1|Add12~9  ; |part2|fadder:add1|Add12~9  ; out0             ;
+; |part2|fadder:add1|Add12~10 ; |part2|fadder:add1|Add12~10 ; out0             ;
+; |part2|fadder:add1|Add12~11 ; |part2|fadder:add1|Add12~11 ; out0             ;
+; |part2|fadder:add1|Add13~7  ; |part2|fadder:add1|Add13~7  ; out0             ;
+; |part2|fadder:add1|Add13~8  ; |part2|fadder:add1|Add13~8  ; out0             ;
+; |part2|fadder:add1|Add13~9  ; |part2|fadder:add1|Add13~9  ; out0             ;
+; |part2|fadder:add1|Add13~10 ; |part2|fadder:add1|Add13~10 ; out0             ;
+; |part2|fadder:add1|Add13~11 ; |part2|fadder:add1|Add13~11 ; out0             ;
+; |part2|fadder:add1|Add13~12 ; |part2|fadder:add1|Add13~12 ; out0             ;
+; |part2|fadder:add1|Add13~13 ; |part2|fadder:add1|Add13~13 ; out0             ;
+; |part2|fadder:add1|Add15~1  ; |part2|fadder:add1|Add15~1  ; out0             ;
+; |part2|fadder:add1|Add15~3  ; |part2|fadder:add1|Add15~3  ; out0             ;
+; |part2|fadder:add1|Add15~4  ; |part2|fadder:add1|Add15~4  ; out0             ;
+; |part2|fadder:add1|Add15~5  ; |part2|fadder:add1|Add15~5  ; out0             ;
+; |part2|fadder:add1|Add15~6  ; |part2|fadder:add1|Add15~6  ; out0             ;
+; |part2|fadder:add1|Add15~9  ; |part2|fadder:add1|Add15~9  ; out0             ;
+; |part2|fadder:add1|Add15~11 ; |part2|fadder:add1|Add15~11 ; out0             ;
+; |part2|fadder:add1|Add15~14 ; |part2|fadder:add1|Add15~14 ; out0             ;
+; |part2|fadder:add1|Add15~16 ; |part2|fadder:add1|Add15~16 ; out0             ;
+; |part2|fadder:add1|Add15~18 ; |part2|fadder:add1|Add15~18 ; out0             ;
+; |part2|fadder:add1|Add15~19 ; |part2|fadder:add1|Add15~19 ; out0             ;
+; |part2|fadder:add1|Add15~20 ; |part2|fadder:add1|Add15~20 ; out0             ;
+; |part2|fadder:add1|Add15~21 ; |part2|fadder:add1|Add15~21 ; out0             ;
+; |part2|fadder:add1|Add15~22 ; |part2|fadder:add1|Add15~22 ; out0             ;
+; |part2|fadder:add1|Add15~23 ; |part2|fadder:add1|Add15~23 ; out0             ;
+; |part2|fadder:add1|Add15~24 ; |part2|fadder:add1|Add15~24 ; out0             ;
+; |part2|fadder:add1|Add15~25 ; |part2|fadder:add1|Add15~25 ; out0             ;
+; |part2|fadder:add1|Add15~26 ; |part2|fadder:add1|Add15~26 ; out0             ;
+; |part2|fadder:add1|Add15~27 ; |part2|fadder:add1|Add15~27 ; out0             ;
+; |part2|fadder:add1|Add15~28 ; |part2|fadder:add1|Add15~28 ; out0             ;
+; |part2|fadder:add1|Add15~29 ; |part2|fadder:add1|Add15~29 ; out0             ;
+; |part2|fadder:add1|Add15~30 ; |part2|fadder:add1|Add15~30 ; out0             ;
+; |part2|fadder:add1|Add15~31 ; |part2|fadder:add1|Add15~31 ; out0             ;
+; |part2|fadder:add1|Add15~32 ; |part2|fadder:add1|Add15~32 ; out0             ;
+; |part2|fadder:add1|Equal2~0 ; |part2|fadder:add1|Equal2~0 ; out0             ;
+; |part2|fadder:add1|Equal4~0 ; |part2|fadder:add1|Equal4~0 ; out0             ;
+; |part2|fadder:add1|Equal5~0 ; |part2|fadder:add1|Equal5~0 ; out0             ;
+; |part2|fadder:add1|Equal6~0 ; |part2|fadder:add1|Equal6~0 ; out0             ;
+; |part2|fadder:add1|Equal7~0 ; |part2|fadder:add1|Equal7~0 ; out0             ;
++-----------------------------+-----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                     ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |part2|BIN[0]               ; |part2|BIN[0]               ; regout           ;
+; |part2|BIN[6]               ; |part2|BIN[6]               ; regout           ;
+; |part2|BIN[5]               ; |part2|BIN[5]               ; regout           ;
+; |part2|BIN[1]               ; |part2|BIN[1]               ; regout           ;
+; |part2|SW[10]               ; |part2|SW[10]               ; out              ;
+; |part2|SW[11]               ; |part2|SW[11]               ; out              ;
+; |part2|HEX0[6]              ; |part2|HEX0[6]              ; pin_out          ;
+; |part2|HEX1[0]              ; |part2|HEX1[0]              ; pin_out          ;
+; |part2|fadder:add1|Z~0      ; |part2|fadder:add1|Z~0      ; out0             ;
+; |part2|fadder:add1|Z~1      ; |part2|fadder:add1|Z~1      ; out0             ;
+; |part2|fadder:add1|Z~5      ; |part2|fadder:add1|Z~5      ; out0             ;
+; |part2|fadder:add1|Z~6      ; |part2|fadder:add1|Z~6      ; out0             ;
+; |part2|fadder:add1|Z~24     ; |part2|fadder:add1|Z~24     ; out0             ;
+; |part2|fadder:add1|Z~25     ; |part2|fadder:add1|Z~25     ; out0             ;
+; |part2|fadder:add1|Z~29     ; |part2|fadder:add1|Z~29     ; out0             ;
+; |part2|fadder:add1|Z~30     ; |part2|fadder:add1|Z~30     ; out0             ;
+; |part2|fadder:add1|Z~32     ; |part2|fadder:add1|Z~32     ; out              ;
+; |part2|fadder:add1|Z~33     ; |part2|fadder:add1|Z~33     ; out              ;
+; |part2|fadder:add1|Z~34     ; |part2|fadder:add1|Z~34     ; out              ;
+; |part2|fadder:add1|Z~35     ; |part2|fadder:add1|Z~35     ; out              ;
+; |part2|fadder:add1|Z~36     ; |part2|fadder:add1|Z~36     ; out              ;
+; |part2|fadder:add1|Z~37     ; |part2|fadder:add1|Z~37     ; out              ;
+; |part2|fadder:add1|Z~38     ; |part2|fadder:add1|Z~38     ; out              ;
+; |part2|fadder:add1|Z~39     ; |part2|fadder:add1|Z~39     ; out              ;
+; |part2|fadder:add1|Z~40     ; |part2|fadder:add1|Z~40     ; out              ;
+; |part2|fadder:add1|Z~41     ; |part2|fadder:add1|Z~41     ; out              ;
+; |part2|fadder:add1|Z~42     ; |part2|fadder:add1|Z~42     ; out              ;
+; |part2|fadder:add1|Z~43     ; |part2|fadder:add1|Z~43     ; out              ;
+; |part2|fadder:add1|Z~44     ; |part2|fadder:add1|Z~44     ; out              ;
+; |part2|fadder:add1|Z~45     ; |part2|fadder:add1|Z~45     ; out              ;
+; |part2|fadder:add1|Z~46     ; |part2|fadder:add1|Z~46     ; out              ;
+; |part2|fadder:add1|Z~47     ; |part2|fadder:add1|Z~47     ; out              ;
+; |part2|fadder:add1|Z~48     ; |part2|fadder:add1|Z~48     ; out              ;
+; |part2|fadder:add1|Z~49     ; |part2|fadder:add1|Z~49     ; out              ;
+; |part2|fadder:add1|Z~50     ; |part2|fadder:add1|Z~50     ; out              ;
+; |part2|fadder:add1|Z~51     ; |part2|fadder:add1|Z~51     ; out              ;
+; |part2|fadder:add1|Z~52     ; |part2|fadder:add1|Z~52     ; out              ;
+; |part2|fadder:add1|Z~53     ; |part2|fadder:add1|Z~53     ; out              ;
+; |part2|fadder:add1|Z~54     ; |part2|fadder:add1|Z~54     ; out              ;
+; |part2|fadder:add1|Z~55     ; |part2|fadder:add1|Z~55     ; out              ;
+; |part2|fadder:add1|Z~56     ; |part2|fadder:add1|Z~56     ; out              ;
+; |part2|fadder:add1|Z~57     ; |part2|fadder:add1|Z~57     ; out              ;
+; |part2|fadder:add1|Z~58     ; |part2|fadder:add1|Z~58     ; out              ;
+; |part2|fadder:add1|Z~59     ; |part2|fadder:add1|Z~59     ; out              ;
+; |part2|fadder:add1|Z~60     ; |part2|fadder:add1|Z~60     ; out              ;
+; |part2|fadder:add1|Z~61     ; |part2|fadder:add1|Z~61     ; out              ;
+; |part2|fadder:add1|Z~62     ; |part2|fadder:add1|Z~62     ; out              ;
+; |part2|fadder:add1|Z~63     ; |part2|fadder:add1|Z~63     ; out              ;
+; |part2|fadder:add1|Z~65     ; |part2|fadder:add1|Z~65     ; out              ;
+; |part2|fadder:add1|Z~66     ; |part2|fadder:add1|Z~66     ; out              ;
+; |part2|fadder:add1|Z~67     ; |part2|fadder:add1|Z~67     ; out              ;
+; |part2|fadder:add1|Z~73     ; |part2|fadder:add1|Z~73     ; out              ;
+; |part2|fadder:add1|Z~74     ; |part2|fadder:add1|Z~74     ; out              ;
+; |part2|fadder:add1|Z~75     ; |part2|fadder:add1|Z~75     ; out              ;
+; |part2|disp:disp0|HEX~0     ; |part2|disp:disp0|HEX~0     ; out0             ;
+; |part2|disp:disp0|HEX~1     ; |part2|disp:disp0|HEX~1     ; out0             ;
+; |part2|disp:disp0|HEX~2     ; |part2|disp:disp0|HEX~2     ; out0             ;
+; |part2|disp:disp0|HEX~3     ; |part2|disp:disp0|HEX~3     ; out0             ;
+; |part2|disp:disp0|HEX~4     ; |part2|disp:disp0|HEX~4     ; out0             ;
+; |part2|disp:disp0|HEX~6     ; |part2|disp:disp0|HEX~6     ; out0             ;
+; |part2|disp:disp0|HEX~7     ; |part2|disp:disp0|HEX~7     ; out0             ;
+; |part2|disp:disp0|HEX~8     ; |part2|disp:disp0|HEX~8     ; out0             ;
+; |part2|disp:disp0|HEX~9     ; |part2|disp:disp0|HEX~9     ; out0             ;
+; |part2|disp:disp0|HEX~14    ; |part2|disp:disp0|HEX~14    ; out0             ;
+; |part2|disp:disp0|HEX~15    ; |part2|disp:disp0|HEX~15    ; out0             ;
+; |part2|disp:disp0|HEX~21    ; |part2|disp:disp0|HEX~21    ; out0             ;
+; |part2|disp:disp0|HEX~23    ; |part2|disp:disp0|HEX~23    ; out0             ;
+; |part2|disp:disp0|HEX~24    ; |part2|disp:disp0|HEX~24    ; out0             ;
+; |part2|disp:disp0|HEX~27    ; |part2|disp:disp0|HEX~27    ; out0             ;
+; |part2|disp:disp0|HEX~28    ; |part2|disp:disp0|HEX~28    ; out0             ;
+; |part2|disp:disp0|HEX~29    ; |part2|disp:disp0|HEX~29    ; out0             ;
+; |part2|disp:disp0|HEX~31    ; |part2|disp:disp0|HEX~31    ; out0             ;
+; |part2|disp:disp0|HEX~37    ; |part2|disp:disp0|HEX~37    ; out0             ;
+; |part2|disp:disp0|HEX~39    ; |part2|disp:disp0|HEX~39    ; out0             ;
+; |part2|disp:disp0|HEX~41    ; |part2|disp:disp0|HEX~41    ; out0             ;
+; |part2|disp:disp0|HEX~42    ; |part2|disp:disp0|HEX~42    ; out0             ;
+; |part2|disp:disp0|HEX~43    ; |part2|disp:disp0|HEX~43    ; out0             ;
+; |part2|disp:disp0|HEX~44    ; |part2|disp:disp0|HEX~44    ; out0             ;
+; |part2|disp:disp0|HEX~45    ; |part2|disp:disp0|HEX~45    ; out0             ;
+; |part2|disp:disp0|HEX~46    ; |part2|disp:disp0|HEX~46    ; out0             ;
+; |part2|disp:disp0|HEX~47    ; |part2|disp:disp0|HEX~47    ; out0             ;
+; |part2|disp:disp0|HEX~49    ; |part2|disp:disp0|HEX~49    ; out0             ;
+; |part2|disp:disp0|HEX~50    ; |part2|disp:disp0|HEX~50    ; out0             ;
+; |part2|disp:disp0|HEX[6]    ; |part2|disp:disp0|HEX[6]    ; out0             ;
+; |part2|disp:disp1|HEX~0     ; |part2|disp:disp1|HEX~0     ; out0             ;
+; |part2|disp:disp1|HEX~6     ; |part2|disp:disp1|HEX~6     ; out0             ;
+; |part2|disp:disp1|HEX~7     ; |part2|disp:disp1|HEX~7     ; out0             ;
+; |part2|disp:disp1|HEX[0]    ; |part2|disp:disp1|HEX[0]    ; out0             ;
+; |part2|disp:disp1|HEX~14    ; |part2|disp:disp1|HEX~14    ; out0             ;
+; |part2|disp:disp1|HEX~15    ; |part2|disp:disp1|HEX~15    ; out0             ;
+; |part2|disp:disp1|HEX~20    ; |part2|disp:disp1|HEX~20    ; out0             ;
+; |part2|disp:disp1|HEX~21    ; |part2|disp:disp1|HEX~21    ; out0             ;
+; |part2|disp:disp1|HEX~22    ; |part2|disp:disp1|HEX~22    ; out0             ;
+; |part2|disp:disp1|HEX~23    ; |part2|disp:disp1|HEX~23    ; out0             ;
+; |part2|disp:disp1|HEX~24    ; |part2|disp:disp1|HEX~24    ; out0             ;
+; |part2|disp:disp1|HEX~25    ; |part2|disp:disp1|HEX~25    ; out0             ;
+; |part2|disp:disp1|HEX~27    ; |part2|disp:disp1|HEX~27    ; out0             ;
+; |part2|disp:disp1|HEX~28    ; |part2|disp:disp1|HEX~28    ; out0             ;
+; |part2|disp:disp1|HEX~29    ; |part2|disp:disp1|HEX~29    ; out0             ;
+; |part2|disp:disp1|HEX~31    ; |part2|disp:disp1|HEX~31    ; out0             ;
+; |part2|disp:disp1|HEX~32    ; |part2|disp:disp1|HEX~32    ; out0             ;
+; |part2|disp:disp1|HEX~33    ; |part2|disp:disp1|HEX~33    ; out0             ;
+; |part2|disp:disp1|HEX~34    ; |part2|disp:disp1|HEX~34    ; out0             ;
+; |part2|disp:disp1|HEX~35    ; |part2|disp:disp1|HEX~35    ; out0             ;
+; |part2|disp:disp1|HEX~37    ; |part2|disp:disp1|HEX~37    ; out0             ;
+; |part2|disp:disp1|HEX~38    ; |part2|disp:disp1|HEX~38    ; out0             ;
+; |part2|disp:disp1|HEX~39    ; |part2|disp:disp1|HEX~39    ; out0             ;
+; |part2|disp:disp1|HEX~40    ; |part2|disp:disp1|HEX~40    ; out0             ;
+; |part2|disp:disp1|HEX~41    ; |part2|disp:disp1|HEX~41    ; out0             ;
+; |part2|disp:disp1|HEX~46    ; |part2|disp:disp1|HEX~46    ; out0             ;
+; |part2|disp:disp1|HEX~49    ; |part2|disp:disp1|HEX~49    ; out0             ;
+; |part2|disp:disp1|HEX~50    ; |part2|disp:disp1|HEX~50    ; out0             ;
+; |part2|disp:disp2|HEX~0     ; |part2|disp:disp2|HEX~0     ; out0             ;
+; |part2|disp:disp2|HEX~1     ; |part2|disp:disp2|HEX~1     ; out0             ;
+; |part2|disp:disp2|HEX~2     ; |part2|disp:disp2|HEX~2     ; out0             ;
+; |part2|disp:disp2|HEX~14    ; |part2|disp:disp2|HEX~14    ; out0             ;
+; |part2|disp:disp2|HEX~15    ; |part2|disp:disp2|HEX~15    ; out0             ;
+; |part2|disp:disp2|HEX~21    ; |part2|disp:disp2|HEX~21    ; out0             ;
+; |part2|disp:disp2|HEX~23    ; |part2|disp:disp2|HEX~23    ; out0             ;
+; |part2|disp:disp2|HEX~24    ; |part2|disp:disp2|HEX~24    ; out0             ;
+; |part2|disp:disp2|HEX~27    ; |part2|disp:disp2|HEX~27    ; out0             ;
+; |part2|disp:disp2|HEX~28    ; |part2|disp:disp2|HEX~28    ; out0             ;
+; |part2|disp:disp2|HEX~29    ; |part2|disp:disp2|HEX~29    ; out0             ;
+; |part2|disp:disp2|HEX~31    ; |part2|disp:disp2|HEX~31    ; out0             ;
+; |part2|disp:disp2|HEX~42    ; |part2|disp:disp2|HEX~42    ; out0             ;
+; |part2|disp:disp2|HEX~43    ; |part2|disp:disp2|HEX~43    ; out0             ;
+; |part2|disp:disp2|HEX~44    ; |part2|disp:disp2|HEX~44    ; out0             ;
+; |part2|disp:disp2|HEX~50    ; |part2|disp:disp2|HEX~50    ; out0             ;
+; |part2|disp:disp3|HEX~0     ; |part2|disp:disp3|HEX~0     ; out0             ;
+; |part2|disp:disp3|HEX~1     ; |part2|disp:disp3|HEX~1     ; out0             ;
+; |part2|disp:disp3|HEX~2     ; |part2|disp:disp3|HEX~2     ; out0             ;
+; |part2|disp:disp3|HEX~14    ; |part2|disp:disp3|HEX~14    ; out0             ;
+; |part2|disp:disp3|HEX~15    ; |part2|disp:disp3|HEX~15    ; out0             ;
+; |part2|disp:disp3|HEX~21    ; |part2|disp:disp3|HEX~21    ; out0             ;
+; |part2|disp:disp3|HEX~23    ; |part2|disp:disp3|HEX~23    ; out0             ;
+; |part2|disp:disp3|HEX~24    ; |part2|disp:disp3|HEX~24    ; out0             ;
+; |part2|disp:disp3|HEX~31    ; |part2|disp:disp3|HEX~31    ; out0             ;
+; |part2|disp:disp3|HEX~42    ; |part2|disp:disp3|HEX~42    ; out0             ;
+; |part2|disp:disp3|HEX~43    ; |part2|disp:disp3|HEX~43    ; out0             ;
+; |part2|disp:disp3|HEX~44    ; |part2|disp:disp3|HEX~44    ; out0             ;
+; |part2|disp:disp3|HEX~50    ; |part2|disp:disp3|HEX~50    ; out0             ;
+; |part2|fadder:add1|Add0~0   ; |part2|fadder:add1|Add0~0   ; out0             ;
+; |part2|fadder:add1|Add1~1   ; |part2|fadder:add1|Add1~1   ; out0             ;
+; |part2|fadder:add1|Add1~3   ; |part2|fadder:add1|Add1~3   ; out0             ;
+; |part2|fadder:add1|Add2~0   ; |part2|fadder:add1|Add2~0   ; out0             ;
+; |part2|fadder:add1|Add2~5   ; |part2|fadder:add1|Add2~5   ; out0             ;
+; |part2|fadder:add1|Add3~1   ; |part2|fadder:add1|Add3~1   ; out0             ;
+; |part2|fadder:add1|Add3~3   ; |part2|fadder:add1|Add3~3   ; out0             ;
+; |part2|fadder:add1|Add3~5   ; |part2|fadder:add1|Add3~5   ; out0             ;
+; |part2|fadder:add1|Add3~6   ; |part2|fadder:add1|Add3~6   ; out0             ;
+; |part2|fadder:add1|Add3~7   ; |part2|fadder:add1|Add3~7   ; out0             ;
+; |part2|fadder:add1|Add4~3   ; |part2|fadder:add1|Add4~3   ; out0             ;
+; |part2|fadder:add1|Add4~5   ; |part2|fadder:add1|Add4~5   ; out0             ;
+; |part2|fadder:add1|Add4~6   ; |part2|fadder:add1|Add4~6   ; out0             ;
+; |part2|fadder:add1|Add4~7   ; |part2|fadder:add1|Add4~7   ; out0             ;
+; |part2|fadder:add1|Add4~8   ; |part2|fadder:add1|Add4~8   ; out0             ;
+; |part2|fadder:add1|Add4~9   ; |part2|fadder:add1|Add4~9   ; out0             ;
+; |part2|fadder:add1|Add5~1   ; |part2|fadder:add1|Add5~1   ; out0             ;
+; |part2|fadder:add1|Add5~3   ; |part2|fadder:add1|Add5~3   ; out0             ;
+; |part2|fadder:add1|Add5~5   ; |part2|fadder:add1|Add5~5   ; out0             ;
+; |part2|fadder:add1|Add5~6   ; |part2|fadder:add1|Add5~6   ; out0             ;
+; |part2|fadder:add1|Add5~7   ; |part2|fadder:add1|Add5~7   ; out0             ;
+; |part2|fadder:add1|Add5~8   ; |part2|fadder:add1|Add5~8   ; out0             ;
+; |part2|fadder:add1|Add5~9   ; |part2|fadder:add1|Add5~9   ; out0             ;
+; |part2|fadder:add1|Add5~10  ; |part2|fadder:add1|Add5~10  ; out0             ;
+; |part2|fadder:add1|Add5~11  ; |part2|fadder:add1|Add5~11  ; out0             ;
+; |part2|fadder:add1|Add6~7   ; |part2|fadder:add1|Add6~7   ; out0             ;
+; |part2|fadder:add1|Add6~8   ; |part2|fadder:add1|Add6~8   ; out0             ;
+; |part2|fadder:add1|Add6~9   ; |part2|fadder:add1|Add6~9   ; out0             ;
+; |part2|fadder:add1|Add6~10  ; |part2|fadder:add1|Add6~10  ; out0             ;
+; |part2|fadder:add1|Add6~11  ; |part2|fadder:add1|Add6~11  ; out0             ;
+; |part2|fadder:add1|Add6~12  ; |part2|fadder:add1|Add6~12  ; out0             ;
+; |part2|fadder:add1|Add6~13  ; |part2|fadder:add1|Add6~13  ; out0             ;
+; |part2|fadder:add1|Add7~0   ; |part2|fadder:add1|Add7~0   ; out0             ;
+; |part2|fadder:add1|Add7~1   ; |part2|fadder:add1|Add7~1   ; out0             ;
+; |part2|fadder:add1|Add8~1   ; |part2|fadder:add1|Add8~1   ; out0             ;
+; |part2|fadder:add1|Add8~2   ; |part2|fadder:add1|Add8~2   ; out0             ;
+; |part2|fadder:add1|Add8~3   ; |part2|fadder:add1|Add8~3   ; out0             ;
+; |part2|fadder:add1|Add9~5   ; |part2|fadder:add1|Add9~5   ; out0             ;
+; |part2|fadder:add1|Add10~5  ; |part2|fadder:add1|Add10~5  ; out0             ;
+; |part2|fadder:add1|Add10~6  ; |part2|fadder:add1|Add10~6  ; out0             ;
+; |part2|fadder:add1|Add10~7  ; |part2|fadder:add1|Add10~7  ; out0             ;
+; |part2|fadder:add1|Add11~5  ; |part2|fadder:add1|Add11~5  ; out0             ;
+; |part2|fadder:add1|Add11~6  ; |part2|fadder:add1|Add11~6  ; out0             ;
+; |part2|fadder:add1|Add11~7  ; |part2|fadder:add1|Add11~7  ; out0             ;
+; |part2|fadder:add1|Add11~8  ; |part2|fadder:add1|Add11~8  ; out0             ;
+; |part2|fadder:add1|Add11~9  ; |part2|fadder:add1|Add11~9  ; out0             ;
+; |part2|fadder:add1|Add12~4  ; |part2|fadder:add1|Add12~4  ; out0             ;
+; |part2|fadder:add1|Add12~5  ; |part2|fadder:add1|Add12~5  ; out0             ;
+; |part2|fadder:add1|Add12~6  ; |part2|fadder:add1|Add12~6  ; out0             ;
+; |part2|fadder:add1|Add12~7  ; |part2|fadder:add1|Add12~7  ; out0             ;
+; |part2|fadder:add1|Add12~8  ; |part2|fadder:add1|Add12~8  ; out0             ;
+; |part2|fadder:add1|Add12~9  ; |part2|fadder:add1|Add12~9  ; out0             ;
+; |part2|fadder:add1|Add12~10 ; |part2|fadder:add1|Add12~10 ; out0             ;
+; |part2|fadder:add1|Add12~11 ; |part2|fadder:add1|Add12~11 ; out0             ;
+; |part2|fadder:add1|Add13~7  ; |part2|fadder:add1|Add13~7  ; out0             ;
+; |part2|fadder:add1|Add13~8  ; |part2|fadder:add1|Add13~8  ; out0             ;
+; |part2|fadder:add1|Add13~9  ; |part2|fadder:add1|Add13~9  ; out0             ;
+; |part2|fadder:add1|Add13~10 ; |part2|fadder:add1|Add13~10 ; out0             ;
+; |part2|fadder:add1|Add13~11 ; |part2|fadder:add1|Add13~11 ; out0             ;
+; |part2|fadder:add1|Add13~12 ; |part2|fadder:add1|Add13~12 ; out0             ;
+; |part2|fadder:add1|Add13~13 ; |part2|fadder:add1|Add13~13 ; out0             ;
+; |part2|fadder:add1|Add14~2  ; |part2|fadder:add1|Add14~2  ; out0             ;
+; |part2|fadder:add1|Add15~1  ; |part2|fadder:add1|Add15~1  ; out0             ;
+; |part2|fadder:add1|Add15~3  ; |part2|fadder:add1|Add15~3  ; out0             ;
+; |part2|fadder:add1|Add15~4  ; |part2|fadder:add1|Add15~4  ; out0             ;
+; |part2|fadder:add1|Add15~5  ; |part2|fadder:add1|Add15~5  ; out0             ;
+; |part2|fadder:add1|Add15~6  ; |part2|fadder:add1|Add15~6  ; out0             ;
+; |part2|fadder:add1|Add15~9  ; |part2|fadder:add1|Add15~9  ; out0             ;
+; |part2|fadder:add1|Add15~11 ; |part2|fadder:add1|Add15~11 ; out0             ;
+; |part2|fadder:add1|Add15~14 ; |part2|fadder:add1|Add15~14 ; out0             ;
+; |part2|fadder:add1|Add15~16 ; |part2|fadder:add1|Add15~16 ; out0             ;
+; |part2|fadder:add1|Add15~18 ; |part2|fadder:add1|Add15~18 ; out0             ;
+; |part2|fadder:add1|Add15~19 ; |part2|fadder:add1|Add15~19 ; out0             ;
+; |part2|fadder:add1|Add15~20 ; |part2|fadder:add1|Add15~20 ; out0             ;
+; |part2|fadder:add1|Add15~21 ; |part2|fadder:add1|Add15~21 ; out0             ;
+; |part2|fadder:add1|Add15~22 ; |part2|fadder:add1|Add15~22 ; out0             ;
+; |part2|fadder:add1|Add15~23 ; |part2|fadder:add1|Add15~23 ; out0             ;
+; |part2|fadder:add1|Add15~24 ; |part2|fadder:add1|Add15~24 ; out0             ;
+; |part2|fadder:add1|Add15~25 ; |part2|fadder:add1|Add15~25 ; out0             ;
+; |part2|fadder:add1|Add15~26 ; |part2|fadder:add1|Add15~26 ; out0             ;
+; |part2|fadder:add1|Add15~27 ; |part2|fadder:add1|Add15~27 ; out0             ;
+; |part2|fadder:add1|Add15~28 ; |part2|fadder:add1|Add15~28 ; out0             ;
+; |part2|fadder:add1|Add15~29 ; |part2|fadder:add1|Add15~29 ; out0             ;
+; |part2|fadder:add1|Add15~30 ; |part2|fadder:add1|Add15~30 ; out0             ;
+; |part2|fadder:add1|Add15~31 ; |part2|fadder:add1|Add15~31 ; out0             ;
+; |part2|fadder:add1|Add15~32 ; |part2|fadder:add1|Add15~32 ; out0             ;
+; |part2|fadder:add1|Equal2~0 ; |part2|fadder:add1|Equal2~0 ; out0             ;
+; |part2|fadder:add1|Equal4~0 ; |part2|fadder:add1|Equal4~0 ; out0             ;
+; |part2|fadder:add1|Equal5~0 ; |part2|fadder:add1|Equal5~0 ; out0             ;
+; |part2|fadder:add1|Equal6~0 ; |part2|fadder:add1|Equal6~0 ; out0             ;
+; |part2|fadder:add1|Equal7~0 ; |part2|fadder:add1|Equal7~0 ; out0             ;
++-----------------------------+-----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Wed Oct 18 22:14:51 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off part2 -c part2
+Info: Using vector source file "C:/Users/Niruyan/Desktop/lab3eecs3201/part2/part2.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 540.0 ns on register "|part2|BIN[0]"
+Warning: Found clock-sensitive change during active clock edge at time 540.0 ns on register "|part2|BIN[6]"
+Warning: Found clock-sensitive change during active clock edge at time 540.0 ns on register "|part2|BIN[5]"
+Warning: Found clock-sensitive change during active clock edge at time 540.0 ns on register "|part2|BIN[4]"
+Warning: Found clock-sensitive change during active clock edge at time 540.0 ns on register "|part2|BIN[3]"
+Warning: Found clock-sensitive change during active clock edge at time 540.0 ns on register "|part2|BIN[2]"
+Warning: Found clock-sensitive change during active clock edge at time 540.0 ns on register "|part2|BIN[1]"
+Warning: Found clock-sensitive change during active clock edge at time 620.0 ns on register "|part2|BIN[7]"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      56.96 %
+Info: Number of transitions in simulation is 1624
+Info: Thank you for using the Quartus II software 30-day evaluation. You have 6 days left (until Oct 24, 2017) before compilation and simulation support is disabled.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 189 megabytes
+    Info: Processing ended: Wed Oct 18 22:14:52 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

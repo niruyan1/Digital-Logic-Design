@@ -1,0 +1,9 @@
+module part2 (SW,KEY,LEDG,LEDR);
+	input [1:0]SW;
+	input KEY;
+	output LEDG;
+	output [7:0] LEDR;
+	reg [7:0] y,Y;
+	parameter [7:0] A=8'00000001,B=8'00000010,C=8'00000100,D=8'00001000,E=8'00010000,F=8'00100000,G=8'01000000,H=8'10000000
+
+endmodule

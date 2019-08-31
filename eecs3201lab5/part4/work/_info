@@ -1,0 +1,158 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/17.0
+vcircuit1
+Z0 !s110 1509928548
+!i10b 1
+!s100 4Ra`=nAZ;DMmY=4mL59>?2
+IB>D;fN5k8nWS;k[NTMP<52
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Niruyan/Desktop/eecs3201lab5/part4
+Z3 w1509913464
+Z4 8C:/Users/Niruyan/Desktop/eecs3201lab5/part4/part4.v
+Z5 FC:/Users/Niruyan/Desktop/eecs3201lab5/part4/part4.v
+L0 16
+Z6 OV;L;10.5c;63
+r1
+!s85 0
+31
+Z7 !s108 1509928547.000000
+Z8 !s107 C:/Users/Niruyan/Desktop/eecs3201lab5/part4/part4.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Niruyan/Desktop/eecs3201lab5/part4/part4.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vclk50
+R0
+!i10b 1
+!s100 G]?ADW1J<8ID732HMESn30
+IWWT:Da6e1964zJWSBfz;<0
+R1
+R2
+R3
+R4
+R5
+L0 36
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vclksec
+Z12 !s110 1510101082
+!i10b 1
+!s100 EmnLSZJLhH[0OZ[?ciX0m1
+I3fRImd[[SBF_8BiklFjCX3
+R1
+R2
+Z13 w1510101061
+R4
+R5
+L0 14
+R6
+r1
+!s85 0
+31
+Z14 !s108 1510101082.000000
+R8
+R9
+!i113 1
+R10
+R11
+vD_FF
+R0
+!i10b 1
+!s100 _8DNTSO7E:HP??@_eOA3[3
+I3T1XRK[XfoIR]Zb6Mb>^b2
+R1
+R2
+R3
+R4
+R5
+L0 8
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@d_@f@f
+vmux2to1
+R0
+!i10b 1
+!s100 J<6YaV5E`7=QJHWTZ5R?^0
+IJ@RbI5K40MQ:Xm1f@5__z2
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vpart4
+R12
+!i10b 1
+!s100 DI@P;ROoXPQFKDd6icVQB0
+IoKcc5ePZ`JJm5[_ii]Dhd2
+R1
+R2
+R13
+R4
+R5
+L0 34
+R6
+r1
+!s85 0
+31
+R14
+R8
+R9
+!i113 1
+R10
+R11
+vpshift
+R12
+!i10b 1
+!s100 k0d@IM[O5H4XfiFECPJ:P1
+IRP@MMVgjmYfGG6=;@L2HZ2
+R1
+R2
+R13
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R14
+R8
+R9
+!i113 1
+R10
+R11

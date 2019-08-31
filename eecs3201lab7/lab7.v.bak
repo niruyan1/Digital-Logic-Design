@@ -1,0 +1,10 @@
+module D_FF(clk,D,Q,rst);
+	input clk,D,rst;
+	output reg Q;
+	always@(posedge clk or negedge rst)
+	if(~rst)
+		Q<=0;
+		else
+		Q<=D;
+	end
+endmodule 

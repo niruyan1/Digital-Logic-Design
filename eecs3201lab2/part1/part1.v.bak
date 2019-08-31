@@ -1,0 +1,5 @@
+module part1(SW,KEY,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6);
+
+	input [17:0]SW;
+	input[2:0]KEY;
+	output[6:0]HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6;

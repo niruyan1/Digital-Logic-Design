@@ -1,0 +1,10 @@
+C:/Users/Niruyan/Desktop/eecs3201lab5/part5/part5.v {1 {vlog -work work -stats=none C:/Users/Niruyan/Desktop/eecs3201lab5/part5/part5.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module D_FF
+-- Compiling module disp
+-- Compiling module part5
+
+Top level modules:
+	part5
+
+} {} {}}

@@ -1,0 +1,28 @@
+module mux2to1(a,b,c,s);
+	input a,b,c;
+	output s;
+	assign s=(~c&a)|(c&b);
+endmodule 
+
+module fulladder(a,b,ci,s,co);
+	input a,b,ci;
+	output s,co;
+	wire x1;
+	assign x1=a^b;
+	assign s=ci^x1;
+	mux2to1 mux1(b,c1,x1,co);
+endmodule
+
+module part2(a,b,ci,s,co);
+	input [3:0]a,b;
+	input ci;
+	output [3:0]s;
+	output co; 
+	wire [2:0] couts;
+	fulladder adder1(a[0],b[0],ci,s[0],couts[0]);
+	fulladder adder2(a[1],b[1],couts[0],s[1],couts[1]);
+	fulladder adder3(a[2],b[2],couts[1],s[2],couts[2]);
+	fulladder adder4(a[3],b[3],couts[2],s[3],co);
+
+endmodule
+ 

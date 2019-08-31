@@ -1,0 +1,16 @@
+C:/Users/Niruyan/Desktop/eecs3201lab4/part3/part3.v {1 {vlog -work work -stats=none C:/Users/Niruyan/Desktop/eecs3201lab4/part3/part3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module mux2to1
+-- Compiling module D_FF
+-- Compiling module circuit1
+-- Compiling module T_FF
+-- Compiling module qcount
+-- Compiling module enabler
+-- Compiling module clkchange
+-- Compiling module part3
+
+Top level modules:
+	T_FF
+	part3
+
+} {} {}}
